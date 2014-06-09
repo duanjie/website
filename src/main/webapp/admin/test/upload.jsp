@@ -1,0 +1,79 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<base href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/">
+<title>绵阳联生活后台管理</title>
+<link href="admin/resources/css/main.css" rel="stylesheet" type="text/css" /> 
+<!--[if IE 8]><link href="admin/resources/css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href="admin/resources/css/common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="admin/resources/js/jquery.min.js"></script>
+<script type="text/javascript" src="admin/resources/js/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="admin/resources/js/plugins/ui/jquery.easytabs.min.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/ui/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/ui/jquery.bootbox.min.js"></script> <!-- 弹框 -->
+<script type="text/javascript" src="admin/resources/js/plugins/ui/jquery.colorpicker.js"></script> 
+<script type="text/javascript" src="admin/resources/js/plugins/ui/jquery.timepicker.min.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/ui/jquery.jgrowl.js"></script><!-- 弹框 -->
+<script type="text/javascript" src="admin/resources/js/plugins/ui/jquery.fancybox.js"></script><!-- 相册 -->
+
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.autosize.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.inputmask.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.select2.min.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.listbox.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.validation.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="admin/resources/js/plugins/forms/jquery.form.js"></script>
+
+<script type="text/javascript" src="admin/resources/ckeditor/ckeditor.js"></script>
+
+<script type="text/javascript" src="admin/resources/js/plugins/tables/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="admin/resources/js/files/bootstrap.min.js"></script>
+
+<script src="admin/resources/js/jasny-bootstrap.min.js"></script>
+
+<script type="text/javascript" src="admin/resources/js/common.js"></script>
+
+<script type="text/javascript" src="admin/resources/js/files/functions.js"></script>
+
+<script type="text/javascript">
+$().ready(function() {
+	var $browserButton = $("#browserButton");
+	$browserButton.browser();
+	
+});
+</script>
+</head>
+<body>
+<form>
+<!--   <div class="fileinput fileinput-new" data-provides="fileinput">
+  <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;">
+  	<img alt="" src="http://127.0.0.1:8080/LSHWebSite/upload/image//article/ec2f91de-9c80-4851-9b75-cc4a4c6f1dcb.jpg">
+  </div>
+  <div>
+    <span class="btn btn-default btn-file">
+    <span class="fileinput-new">Select image</span>
+    <span class="fileinput-exists">Change</span>
+    <input type="file" name="image"></span>
+    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+  </div>
+</div>  
+<br/><br/><br/><br/> -->
+	<div class="thumbnail" style="width: 200px; height: 150px;">
+  		<img alt="" src="http://127.0.0.1:8080/LSHWebSite/upload/image/article/ec2f91de-9c80-4851-9b75-cc4a4c6f1dcb.jpg">
+  	</div>
+	<input type="text" name="image1" class="text" maxlength="200"/>
+	<input type="button" id="browserButton" class="button" value="选择文件" />
+  
+</form>
+</body>
+</html>

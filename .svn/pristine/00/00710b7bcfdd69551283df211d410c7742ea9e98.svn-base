@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website>
+	<setting name="siteName" value="联生活公司网站" />
+	<setting name="siteUrl" value="http://127.0.0.1:8080/LSHWebSite" />
+	<setting name="logo" value="/upload/image/logo.gif" />
+	
+	<setting name="uploadMaxSize" value="10" />
+	<setting name="uploadImageExtension" value="jpg,jpeg,bmp,gif,png" />
+	<setting name="uploadFlashExtension" value="swf,flv" />
+	<setting name="uploadMediaExtension" value="swf,flv,mp3,wav,avi,rm,rmvb" />
+	<setting name="uploadFileExtension" value="zip,rar,7z,doc,docx,xls,xlsx,ppt,pptx" />
+	<setting name="imageUploadPath" value="/upload/image/" />
+	<setting name="flashUploadPath" value="/upload/flash/" />
+	<setting name="mediaUploadPath" value="/upload/media/" />
+	<setting name="fileUploadPath" value="/upload/file/" />
+</website>

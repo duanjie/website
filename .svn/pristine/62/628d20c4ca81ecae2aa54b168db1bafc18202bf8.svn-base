@@ -1,0 +1,46 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:SiteInfomationController.java
+ * Package Name:com.lsh.site.controller.site
+ * Date:2014年5月9日下午1:33:00
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.controller.site;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.lsh.site.entity.SiteInformation;
+import com.lsh.site.service.SiteInformationService;
+
+/**
+ * ClassName: SiteInfomationController <br/>
+ * Description: 类描述
+ * date: 2014年5月9日 下午1:33:00 <br/>
+ *
+ * @author YangEnHua
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Controller("siteInfomationLookController")
+public class SiteInfomationController {
+
+	@Resource(name = "siteInfomationServiceImpl")
+	private SiteInformationService siteInformationService;
+	
+	
+	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	public String showEdit(HttpServletRequest request,ModelMap modelMap){
+		long id = 1l; 
+		SiteInformation siteInformation = siteInformationService.find(id);
+		request.getSession().setAttribute("info", siteInformation);
+		modelMap.addAttribute("divId","current_page_item");
+		return "index";
+	}
+}

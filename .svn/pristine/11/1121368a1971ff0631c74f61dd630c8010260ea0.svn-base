@@ -1,0 +1,119 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:ImageController.java
+ * Package Name:com.lsh.site.controller.admin
+ * Date:2014年5月30日上午10:01:38
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.controller.admin;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.lsh.site.Filter;
+import com.lsh.site.Filter.Operator;
+import com.lsh.site.Message;
+import com.lsh.site.Page;
+import com.lsh.site.Pageable;
+import com.lsh.site.controller.site.BaseController;
+import com.lsh.site.entity.Album;
+import com.lsh.site.entity.BaseEntity;
+import com.lsh.site.entity.Image;
+import com.lsh.site.service.AlbumService;
+import com.lsh.site.service.ImageService;
+
+/**
+ * ClassName: ImageController <br/>
+ * Description: Image Controller<br/>
+ * date: 2014年5月30日 上午10:01:38 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Controller("imageController")
+@RequestMapping("admin/image")
+public class ImageController extends BaseController{
+	
+	@Resource(name="imageServiceImpl")
+	private ImageService imageService;
+	
+	@Resource(name="albumServiceImpl")
+	private AlbumService albumService;
+
+	
+	
+	@RequestMapping(value = "list")
+	public String list(Pageable pageable,Long albumId,Model model){
+	     Album album =	albumService.find(albumId);
+//	    pageable.getFilters().add(new Filter("album.id", Operator.eq, id));
+		Page<Image> page = imageService.findPage(pageable);
+		model.addAttribute("page", page);
+		
+		long a = page.getTotal()-1;
+		model.addAttribute("count", a+"张");
+		model.addAttribute("album", album);
+		
+		return "/admin/page/image/list";
+	}
+	
+	
+	@RequestMapping(value = "showAdd")
+	public String showAdd(Model model,Long albumId){
+		model.addAttribute("albumId", albumId);
+		return "/admin/page/image/add";
+	}
+	
+	@RequestMapping(value = "add",method = {RequestMethod.POST})
+	public @ResponseBody Message add(Image image,Long albumId){
+		System.out.println("))))))))))))))))))))))))))))))))((((((((((((((((((((((((((((((((");
+		try {
+			System.out.println("----------------------");
+			
+			  Album album = new Album();
+			  album.setId(albumId);
+			  System.out.println(albumId);
+			  image.setAlbum(album);
+			  System.out.println(album);
+			imageService.save(image);
+		} catch (Exception e) {
+			return Message.error("admin.add.error");
+		}
+		return Message.success("admin.add.success");
+	}
+	
+	@RequestMapping(value = "showEdit")
+	public String showEdit(Long id,ModelMap  modelMap){
+		Image image = imageService.find(id);
+	    modelMap.addAttribute("image", image);
+		return "/admin/page/image/edit";
+	
+	}
+	
+	
+	@RequestMapping(value = "edit")
+	public @ResponseBody Message edit(Image image,ModelMap modelMap){
+		try {
+			image=imageService.update(image,BaseEntity.ID_PROPERTY_NAME,BaseEntity.CREATE_DATE_PROPERTY_NAME,Image.ALBUM_PROPERTY_NAME);
+			modelMap.addAttribute("image",image);	
+		} catch (Exception e) {
+			return Message.error("admin.edit.error");
+		}
+		return Message.success("admin.edit.success");
+	}
+	
+	
+	@RequestMapping(value ="delete",method = {RequestMethod.POST,RequestMethod.GET})
+	public @ResponseBody Message delete(Long id){
+		imageService.delete(id);
+		return Message.success("admin.delete.success");
+	}
+}

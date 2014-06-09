@@ -1,0 +1,36 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:Article.java
+ * Package Name:com.lsh.site.controller.admin
+ * Date:2014年5月20日下午4:35:34
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.controller.admin;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.lsh.site.controller.site.BaseController;
+
+/**
+ * ClassName: Article <br/>
+ * Description: 文章   Controller
+ * date: 2014年5月20日 下午4:35:34 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Controller("articleController")
+@RequestMapping("admin/article")
+public class ArticleController extends BaseController{
+     
+	@RequestMapping(value = "list")
+	public String showLogin(Model model){
+		
+		model.addAttribute("test", "test1");
+		return "/admin/page/article/list";
+	}
+}

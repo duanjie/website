@@ -1,0 +1,132 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:Article.java
+ * Package Name:com.lsh.site.controller.admin
+ * Date:2014年5月20日下午4:35:34
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.controller.admin;
+
+
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+
+import javax.annotation.Resource;
+
+
+
+
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.lsh.site.Message;
+import com.lsh.site.Page;
+import com.lsh.site.Pageable;
+import com.lsh.site.controller.site.BaseController;
+import com.lsh.site.entity.Article;
+import com.lsh.site.entity.BaseEntity;
+import com.lsh.site.service.ArticleService;
+
+/**
+ * ClassName: Article <br/>
+ * Description: 文章   Controller
+ * date: 2014年5月20日 下午4:35:34 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Controller("articleController")
+@RequestMapping("admin/article")
+public class ArticleController extends BaseController{
+	
+	
+	@Resource(name = "articleServiceImpl")
+	ArticleService articleService;
+	
+	/**
+	 * 
+	 * list:文章列表. <br/>
+	 * @param pageable
+	 * @param model
+	 * @return
+	 *         String
+	 */
+	@RequestMapping(value = "list")
+	public String list(Pageable pageable,Model model){
+		Page<Article> page =  articleService.findPage(pageable);
+		model.addAttribute("page", page);
+		model.addAttribute("menu","查看");
+		return "/admin/page/article/list";
+	}
+	
+	
+	
+	@RequestMapping(value = "showAdd")
+	public String showAdd(Model model){
+		model.addAttribute("menu","添加");
+		return "/admin/page/article/add";
+	}
+	
+	@RequestMapping(value = "showMinute")
+	public String showAdd(Model model,Long id){
+		System.out.println(id);
+		model.addAttribute("menu","添加");
+		return "/admin/page/article/add";
+	}
+	
+	
+	@RequestMapping(value = "add",method = {RequestMethod.POST})
+	public @ResponseBody Message add(Article article,Model model){
+		try {
+			model.addAttribute("menu","添加");
+			articleService.save(article);
+		} catch (Exception e) {
+			return Message.error("admin.add.error");
+		}
+		return Message.success("admin.add.success");
+	}
+	
+	@RequestMapping(value = "showEdit")
+	public String showEdit(Long id ,ModelMap  modelMap){
+		    modelMap.addAttribute("menu","修改");
+		    Article article = articleService.find(id);
+		    modelMap.addAttribute("article", article);
+		
+		return "/admin/page/article/edit";
+	}
+	
+	
+	@SuppressWarnings("deprecation")
+	@RequestMapping(value = "edit",method = {RequestMethod.POST})
+	public @ResponseBody Message edit(Article article,ModelMap modelMap){
+		try {
+			article.setContent(URLDecoder.decode(article.getContent(),"UTF-8"));
+			System.out.println(article.getContent());
+			modelMap.addAttribute("menu","修改");
+			article=articleService.update(article,BaseEntity.ID_PROPERTY_NAME,BaseEntity.CREATE_DATE_PROPERTY_NAME);
+			modelMap.addAttribute("article", article);	
+		} catch (Exception e) {
+			return Message.error("admin.edit.error");
+		}
+		return Message.success("admin.edit.success");
+	}
+	
+	@RequestMapping(value = "delete")
+	public @ResponseBody Message delete(@RequestParam(value = "ids[]") Long[] ids ){
+		try {
+			articleService.delete(ids);
+		} catch (Exception e) {
+			return Message.error("admin.delete.error");
+		}
+		return Message.success("admin.delete.success");
+	}
+}

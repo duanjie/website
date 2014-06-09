@@ -1,0 +1,25 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:MenuContentRelationDao.java
+ * Package Name:com.lsh.site.dao
+ * Date:2014年5月8日下午5:19:09
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.dao;
+
+
+import com.lsh.site.entity.MenuContentRelation;
+
+/**
+ * ClassName: MenuContentRelationDao <br/>
+ * Description: 菜单内容Dao
+ * date: 2014年5月8日 下午5:19:09 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+public interface MenuContentRelationDao extends BaseDao<MenuContentRelation, Long>{
+      
+}

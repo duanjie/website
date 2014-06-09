@@ -1,0 +1,113 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+     <%@ page import="java.util.*"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="pt-BR"
+	class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<!--<![endif]-->
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/">
+<meta charset="utf-8">
+<title>绵阳联生活网络科技有限公司</title>
+<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+<link rel="stylesheet" href="public/css/language-selector.css"
+	type="text/css" media="all">
+<meta name="robots" content="index, follow">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" id="jetpack-subscriptions-css"
+	href="public/css/subscriptions.css" type="text/css" media="all">
+<link rel="stylesheet"
+	id="advanced-responsive-video-embedder-plugin-styles-css"
+	href="public/css/public.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-widgets-css"
+	href="public/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="zeropixel-style-css"
+	href="public/css/style.css" type="text/css" media="all">
+<script src="public/js/analytics.js"></script>
+<script type="text/javascript" src="public/js/jquery.js"></script>
+<script type="text/javascript" src="public/js/jquery-migrate.min.js"></script>
+<script type="text/javascript"
+	src="public/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<meta name="generator" content="WordPress 3.8.3">
+<script type="text/javascript">
+	var icl_lang = 'pt-br';
+	var icl_home = 'http://我们的域.com/';
+</script>
+<script type="text/javascript" src="public/js/sitepress.js"></script>
+<meta name="generator" content="WPML ver:2.7.1 stt:44,1;0">
+<style type="text/css">
+.arve-thumb-wrapper {
+	width: 300px;
+}
+
+.arve-normal-wrapper {
+	width: 1170px;
+}
+
+.arve-normal-wrapper.alignleft,.arve-normal-wrapper.alignright,.arve-normal-wrapper.aligncenter
+	{
+	width: 400px;
+}
+
+
+</style>
+
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" id="gravatar-card-css"
+	href="public/css/hovercard.css">
+<link rel="stylesheet" type="text/css" id="gravatar-card-services-css"
+	href="public/css/services.css">
+</head>
+<body>
+	<!--[if lt IE 7]>
+		<p class="chromeframe">你使用的浏览器 <strong>过时的</strong>。 请 <a href="http://browsehappy.com/">更新您的浏览器</a> 或 <a href="http://www.google.com/chromeframe/?redirect=true">激活谷歌 Chrome Frame</a> 为了改善您的体验。</p>
+	<![endif]-->
+
+	<div class="margin-screen">
+		<div class="inner">
+			<div class="video-viewport">
+				<video preload="auto" autoplay="autoplay" loop="loop" muted="muted"
+					width="1920" height="1080">
+				</video>
+				<div class="image-home"></div>
+			</div>
+		</div>
+		<div class="menu-home">
+			<header class="fix-menu header-nav">
+				<div class="logo">
+					<a href="#我们公司的域名"> <img id="logo_136_40" src="${info.logoUrl}" />
+					</a>
+				</div>
+				<nav class="nav-wrap">
+					<button class="navbar-toggle" type="button" data-toggle="collapse"
+						data-target=".bs-navbar-collapse">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+
+					<ul id="menu-principal" class="menu">
+						<li id="menu-item-24"
+							class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-24" ><a
+							href="index.jsp">首页</a></li>
+						<li id="menu-item-27"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 current-menu-item  ${pro }" ><a
+							href="projetos.jhtml">案例展示</a></li>
+						<li id="menu-item-28"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28 current-menu-item ${con }" ><a
+							href="construction.jhtml">网站建设</a></li>
+						<li id="menu-item-25"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25 current-menu-item ${mk } "><a
+							href="market.jhtml">网站营销</a></li>
+						<li id="menu-item-29"
+							class="anchor menu-item menu-item-type-custom menu-item-object-custom menu-item-29 current-menu-item ${at }" ><a
+							href="about.jhtml">关于我们</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
+	</div>

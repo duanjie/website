@@ -1,0 +1,28 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:AccountDaoImpl.java
+ * Package Name:com.lsh.site.dao.impl
+ * Date:2014年5月5日下午2:37:48
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.dao.impl;
+
+import org.springframework.stereotype.Repository;
+
+import com.lsh.site.dao.AccountDao;
+import com.lsh.site.entity.Account;
+
+/**
+ * ClassName: AccountDaoImpl <br/>
+ * Description: 帐号 Dao 实现
+ * date: 2014年5月5日 下午2:37:48 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Repository("accountDaoImpl")
+public class AccountDaoImpl extends BaseDaoImpl<Account, Long> implements AccountDao {
+
+}

@@ -1,0 +1,108 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="pt-BR"
+	class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/">
+<meta charset="utf-8">
+<title>项目页面</title>
+<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+<link rel="stylesheet" href="public/css/language-selector.css"
+	type="text/css" media="all">
+
+<meta name="robots" content="index, follow">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="canonical" href="http://zeropixel.com.br/">
+<link rel="shortcut icon" type="image/x-icon"
+	href="#">
+<link rel="stylesheet" id="jetpack-subscriptions-css"
+	href="public/css/subscriptions.css" type="text/css" media="all">
+<link rel="stylesheet"
+	id="advanced-responsive-video-embedder-plugin-styles-css"
+	href="public/css/public.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-widgets-css"
+	href="public/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="zeropixel-style-css"
+	href="public/css/style.css" type="text/css" media="all">
+<script async="" src="public/js/analytics.js"></script>
+<script type="text/javascript" src="public/js/jquery.js"></script>
+<script type="text/javascript" src="public/js/jquery-migrate.min.js"></script>
+<script type="text/javascript"
+	src="public/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<meta name="generator" content="WordPress 3.8.3">
+<script type="text/javascript">
+	var icl_lang = 'pt-br';
+	var icl_home = 'http://zeropixel.com.br/';
+</script>
+<script type="text/javascript" src="public/js/sitepress.js"></script>
+<meta name="generator" content="WPML ver:2.7.1 stt:44,1;0">
+<style type="text/css">
+.arve-thumb-wrapper {
+	width: 300px;
+}
+
+.arve-normal-wrapper {
+	width: 1170px;
+}
+
+.arve-normal-wrapper.alignleft,.arve-normal-wrapper.alignright,.arve-normal-wrapper.aligncenter
+	{
+	width: 400px;
+}
+</style>
+
+<link rel="canonical"
+	href="./Projetos   Zeropixel - Estúdio Criativo_files/Projetos   Zeropixel - Estúdio Criativo.htm">
+<meta property="og:title"
+	content="Projetos | Zeropixel - Estúdio Criativo">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Zeropixel - Estúdio Criativo">
+<meta property="fb:admins" content="1584386679">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" type="text/css" id="gravatar-card-css"
+	href="public/css/hovercard.css">
+<link rel="stylesheet" type="text/css" id="gravatar-card-services-css"
+	href="public/css/services.css">
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+		<p class="chromeframe">你使用的浏览器 <strong>过时的</strong>。 请 <a href="http://browsehappy.com/">更新您的浏览器</a> 或 <a href="http://www.google.com/chromeframe/?redirect=true">激活谷歌 Chrome Frame</a> 为了改善您的体验。</p>
+	<![endif]-->
+	<header class="fix-menu header-nav">
+		<div class="logo">
+			<a href="#我们的网址"> <img id="logo_136_40"
+				src="${info.logoUrl}" />
+			</a>
+		</div>
+
+		<nav class="nav-wrap">
+			<button class="navbar-toggle" type="button" data-toggle="collapse"
+				data-target=".bs-navbar-collapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+
+			<ul id="menu-principal" class="menu">
+				<li id="menu-item-24"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a
+					href="index.jsp">首页</a></li>
+				<li id="menu-item-27"
+					class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-27"><a
+					href="projetos.jsp">案例展示</a></li>
+				<li id="menu-item-28"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a
+					href="construction.jsp">网站建设</a></li>
+				<li id="menu-item-25"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a
+					href="market.jsp">网站营销</a></li>
+				<li id="menu-item-29"
+					class="anchor menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a
+					href="about.jhtml">联系我们</a></li>
+			</ul>
+		</nav>
+	</header>

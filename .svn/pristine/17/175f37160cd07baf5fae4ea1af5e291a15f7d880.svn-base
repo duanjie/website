@@ -1,0 +1,64 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:MenuContentRelation.java
+ * Package Name:com.lsh.site.entity
+ * Date:2014年4月25日上午9:50:14
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.entity;
+
+import java.math.BigInteger;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+
+/**
+ * 
+ * ClassName: MenuContentRelation <br/>
+ * Description: MenuContentRelation Entity
+ * date: 2014年5月5日 下午2:17:48 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Entity
+@Table(name="t_menu_content_relation")
+public class MenuContentRelation extends BaseEntity {
+	
+	private static final long serialVersionUID = 1L;
+
+
+	@Column(name="content_id")
+	private BigInteger contentId;
+
+
+	@OneToOne(mappedBy="MenuContentRelation")
+	private Menu menu;
+
+	public MenuContentRelation() {
+	}
+
+
+	public BigInteger getContentId() {
+		return this.contentId;
+	}
+
+	public void setContentId(BigInteger contentId) {
+		this.contentId = contentId;
+	}
+
+
+	public Menu getMenu() {
+		return this.menu;
+	}
+
+	public void setTMenu(Menu menu) {
+		this.menu = menu;
+	}
+
+}

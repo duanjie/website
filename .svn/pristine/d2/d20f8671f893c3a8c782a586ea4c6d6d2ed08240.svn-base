@@ -1,0 +1,101 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ include file="../common/header.jsp"%>
+<base href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/">
+
+
+<form name="fom" id="fom" method="post" action="">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table id="subtree1" style="DISPLAY: " width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+          	 
+              <tr>
+                <td height="40" class="font42">
+				<table width="99%" border="0" cellpadding="4" cellspacing="1" bgcolor="#464646" class="newfont03">
+				 <tr class="CTitle" >
+                    	<td height="22" colspan="7" align="center" style="font-size:16px">网站建设详细列表</td>
+                  </tr>
+                  <tr bgcolor="#EEEEEE">
+				    <td width="4%" align="center" height="30">选择</td>
+                    <td width="10%">网站建设标题</td>
+					<td width="10%">网站建设内容</td>
+                    <td width="10%">图片</td>
+					<td width="10%">网站方向</td>
+					<td width="12%">操作</td>
+                  </tr>
+                  <tr bgcolor="#FFFFFF">
+				    <td height="20"><input type="checkbox" name="delid"/></td>
+                    <td ><a href="listmokuaimingxi.htm" onclick=""></a>任务XXX</td>
+					<td>2007-11-11</td>
+                    <td>XXXXXX</td>
+                    <td>XXXXXX</td>
+                  
+                    <td><a href="admin/page/construction/edit_construction.jsp">编辑|</a><a href="admin/page/construction/show_construction.jsp">查看|</a>
+					<a href="#">删除</a></td>
+                  </tr>
+				  <tr bgcolor="#FFFFFF">
+				    <td height="20"><input type="checkbox" name="delid"/></td>
+                    <td ><a href="listmokuaimingxi.htm" onclick=""></a>任务XXX</td>
+					<td>2007-11-11</td>
+                    <td>XXXXXX</td>
+                    <td>XXXXXX</td>
+                   
+                    <td><a href="admin/page/construction/edit_construction.jsp">编辑|</a><a href="admin/page/construction/show_construction.jsp">查看|</a>
+					<a href="#">删除</a></td>
+                  </tr>
+				  <tr bgcolor="#FFFFFF">
+				    <td height="20"><input type="checkbox" name="delid"/></td>
+                    <td ><a href="listmokuaimingxi.htm" onclick=""></a>任务XXX</td>
+					<td>2007-11-11</td>
+                    <td>XXXXXX</td>
+                    <td>XXXXXX</td>
+                    
+                    <td><a href="admin/page/construction/edit_construction.jsp">编辑|</a><a href="admin/page/construction/show_construction.jsp">查看|</a>
+					<a href="#">删除</a></td>
+                  </tr>
+				  <tr bgcolor="#FFFFFF">
+				    <td height="20"><input type="checkbox" name="delid"/></td>
+                    <td ><a href="listmokuaimingxi.htm" onclick=""></a>任务XXX</td>
+					<td>2007-11-11</td>
+                    <td>XXXXXX</td>
+                    <td>XXXXXX</td>
+                    
+                    <td><a href="admin/page/construction/edit_construction.jsp">编辑|</a><a href="admin/page/construction/show_construction.jsp">查看|</a>
+					<a href="#">删除</a></td>
+                  </tr>
+				  <tr bgcolor="#FFFFFF">
+				    <td height="20"><input type="checkbox" name="delid"/></td>
+                    <td ><a href="listmokuaimingxi.htm" onclick=""></a>任务XXX</td>
+					<td>2007-11-11</td>
+                    <td>XXXXXX</td>
+                    <td>XXXXXX</td>
+                  
+                    <td><a href="admin/page/construction/edit_construction.jsp">编辑|</a><a href="admin/page/construction/show_construction.jsp">查看|</a>
+					<a href="#">删除</a></td>
+                  </tr>
+            </table></td>
+        </tr>
+      </table>
+     
+</table></table>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%@ include file="../common/footer.jsp"%>

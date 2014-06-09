@@ -1,0 +1,127 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:AlbumController.java
+ * Package Name:com.lsh.site.controller.admin
+ * Date:2014年5月27日下午2:30:19
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.controller.admin;
+
+
+
+
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+
+
+import com.lsh.site.Message;
+import com.lsh.site.Page;
+import com.lsh.site.Pageable;
+import com.lsh.site.controller.site.BaseController;
+import com.lsh.site.entity.Album;
+import com.lsh.site.entity.BaseEntity;
+import com.lsh.site.entity.Menu;
+import com.lsh.site.service.AlbumService;
+
+/**
+ * ClassName: AlbumController <br/>
+ * Description: 相册 Controller
+ * date: 2014年5月27日 下午2:30:19 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Controller("albumController")
+@RequestMapping("admin/album")
+public class AlbumController extends BaseController{
+
+	@Resource(name = "albumServiceImpl")
+	private AlbumService albumService;
+	
+	/**
+	 * 
+	 * list:显示列表页面 <br/>
+	 * @param pageable
+	 * @param model   
+	 * @return
+	 *         String
+	 */
+	@RequestMapping(value = "list")
+	public String list(Pageable pageable,Model model){
+		Page<Album> page = albumService.findPage(pageable);
+		model.addAttribute("page", page);
+		return "/admin/page/album/list";
+	}
+	
+	/**
+	 * 
+	 * showAdd:进入到添加页面. <br/>
+	 * @param model
+	 * @return
+	 *         String
+	 */
+	@RequestMapping(value = "showAdd")
+	public String showAdd(Model model){
+		return "/admin/page/album/add";
+	}
+	
+	/**
+	 * 
+	 * add:添加相册. <br/>
+	 * @param album
+	 * @param model
+	 * @return
+	 *         Message
+	 */
+	@RequestMapping(value = "add",method = {RequestMethod.POST})
+	public @ResponseBody Message add(Album album,Model model){
+		try {
+			Menu menu = new Menu(3l);
+			album.setMenu(menu);
+			albumService.save(album);
+		} catch (Exception e) {
+			return Message.error("admin.add.error");
+		}
+		return Message.success("admin.add.success");
+	}
+	
+	@RequestMapping(value = "showEdit")
+	public String showEdit(Long id ,ModelMap  modelMap){
+		    Album album = albumService.find(id);
+		    modelMap.addAttribute("album", album);
+		
+		return "/admin/page/album/edit";
+	}
+	
+	
+	@RequestMapping(value = "edit",method = {RequestMethod.POST})
+	public @ResponseBody Message edit(Album album,ModelMap modelMap){
+		try {
+			albumService.update(album,BaseEntity.ID_PROPERTY_NAME,BaseEntity.CREATE_DATE_PROPERTY_NAME);
+		} catch (Exception e) {
+			return Message.error("admin.edit.error");
+		}
+		return Message.success("admin.edit.success");
+	}
+	
+	@RequestMapping(value = "delete")
+	public @ResponseBody Message delete(@RequestParam(value = "ids[]") Long[] ids ){
+		try {
+			albumService.delete(ids);
+		} catch (Exception e) {
+			return Message.error("admin.delete.error");
+		}
+		return Message.success("admin.delete.success");
+	}
+}

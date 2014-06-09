@@ -1,0 +1,24 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:ImageDao.java
+ * Package Name:com.lsh.site.dao
+ * Date:2014年5月30日上午9:38:22
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.dao;
+
+import com.lsh.site.entity.Image;
+
+/**
+ * ClassName: ImageDao <br/>
+ * Description: 图片Dao <br/>
+ * date: 2014年5月30日 上午9:38:22 <br/>
+ * 
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+public interface ImageDao extends BaseDao<Image, Long> {
+
+}

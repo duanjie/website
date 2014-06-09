@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+	class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>案例</title>
+
+<link rel="stylesheet" href="./public/css/language-selector.css"
+	type="text/css" media="all">
+
+<meta name="robots" content="index, follow">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!-- <link rel="shortcut icon" type="image/x-icon" href="http://zeropixel.com.br/wp-content/themes/zeropixel/favicon.ico"> -->
+<link rel="stylesheet" id="jetpack-subscriptions-css"
+	href="./public/css/subscriptions.css" type="text/css" media="all">
+<link rel="stylesheet"
+	id="advanced-responsive-video-embedder-plugin-styles-css"
+	href="./public/css/public.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-widgets-css"
+	href="./public/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="zeropixel-style-css"
+	href="./public/css/style.css" type="text/css" media="all">
+<script src="./public/js/analytics.js"></script>
+<script type="text/javascript" src="./public/js/jquery.js"></script>
+<script type="text/javascript" src="./public/js/jquery-migrate.min.js"></script>
+<script type="text/javascript"
+	src="./public/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<meta name="generator" content="WordPress 3.8.3">
+<script type="text/javascript">
+	var icl_lang = 'pt-br';
+	var icl_home = 'http://我们.com/';
+</script>
+<script type="text/javascript" src="./public/js/sitepress.js"></script>
+<meta name="generator" content="WPML ver:2.7.1 stt:44,1;0">
+<style type="text/css">
+.arve-thumb-wrapper {
+	width: 300px;
+}
+
+.arve-normal-wrapper {
+	width: 1170px;
+}
+
+.arve-normal-wrapper.alignleft,.arve-normal-wrapper.alignright,.arve-normal-wrapper.aligncenter
+	{
+	width: 400px;
+}
+</style>
+
+<meta property="og:title" content="Sobre | Zeropixel - Estúdio Criativo">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://zeropixel.com.br/sobre/">
+<meta property="og:image"
+	content="http://zeropixel.com.br/wp-content/uploads/2014/03/fb-zpx.png">
+<meta property="og:site_name" content="Zeropixel - Estúdio Criativo">
+<meta property="fb:admins" content="1584386679">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" type="text/css" id="gravatar-card-css"
+	href="./public/css/hovercard.css">
+<link rel="stylesheet" type="text/css" id="gravatar-card-services-css"
+	href="./public/css/services.css">
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+		<p class="chromeframe">你使用的浏览器 <strong>过时的</strong>。 请 <a href="http://browsehappy.com/">更新您的浏览器</a> 或 <a href="http://www.google.com/chromeframe/?redirect=true">激活谷歌 Chrome Frame</a> 为了改善您的体验。</p>
+	<![endif]-->
+	<header class="fix-menu header-nav fixed">
+		<div class="logo">
+			<a href="#我们的网址"> <img id="logo_136_40"
+				src="./index/image/logo_136_40.png" />
+			</a>
+		</div>
+
+		<nav class="nav-wrap">
+
+			<button class="navbar-toggle" type="button" data-toggle="collapse"
+				data-target=".bs-navbar-collapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+
+			<ul id="menu-principal" class="menu">
+				<li id="menu-item-24"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a
+					href="index.htm">首页</a></li>
+				<li id="menu-item-27"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a
+					href="projetos.htm">案例展示</a></li>
+				<li id="menu-item-28"
+					class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-9 current_page_item menu-item-28"><a
+					href="sobre.htm">网站建设</a></li>
+				<li id="menu-item-25"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a
+					href="eventos.htm">网站推广</a></li>
+				<li id="menu-item-29"
+					class="anchor menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a
+					href="http://192.168.1.104:8080/LSHWebSite/projetos.htm#contact">关于我们</a></li>
+			</ul>
+		</nav>
+
+		<nav class="nav-social">
+			<ul class="social">
+				<li class="redes"><a target="_blank" class="icon-twitter"
+					href="http://twitter.com/zeropixel"></a></li>
+				<li class="redes"><a target="_blank" class="icon-facebook"
+					href="http://fb.com/zeropixel"></a></li>
+				<li class="redes"><a target="_blank" class="icon-instagram"
+					href="http://instagram.com/estudiozeropixel"></a></li>
+				<li class="redes"><a target="_blank" class="icon-pinterest"
+					href="http://pinterest.com/zeropixel"></a></li>
+			</ul>
+			<span class="lang"><a class="icon-lang en"
+				href="http://zeropixel.com.br/en/about/"></a></span>
+		</nav>
+
+	</header>
+	<div class="banner-interna">
+
+		<section class="header-banner">
+			<div>
+
+				<h1 class="title">我们是 zeropixel</h1>
+				<h4 class="subtitle">工作室的愿望把想法变成产品，移动定位品牌产生很大的结果，通过联合设计、
+					创新和技术的经验。</h4>
+
+				<div class="icons-header">
+
+					<div class="circle">
+						<b class="raio"></b>
+					</div>
+
+					<div class="circle">
+						<div class="engrenagem"></div>
+					</div>
+
+					<div class="circle">
+						<div class="grafic">
+							<div class="column col-1"></div>
+							<div class="column col-2"></div>
+							<div class="column col-3"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-header">
+					<p>Zeropixel 是团结起来的激情和乐趣中发展创造性的解决方案，可能的地方连接人类感情的品牌、 产品和服务。</p>
+					<p>为了实现这些目标，我们在各种数字平台，无论该项目，根据客户的需要的工作。我们是理想的战略合作伙伴，所有那些想要听、
+						策划、 推广及在 internet 上执行操作。我们认为和发送热 ！</p>
+				</div>
+			</div>
+		</section>
+
+		<ul class="cycle-slideshow" data-cycle-fx="fadeout"
+			data-cycle-speed="3000" data-cycle-timeout="2000"
+			data-cycle-easing="linear" data-cycle-slides="&gt; li"
+			style="position: relative;">
+			<li class="cycle-slide cycle-sentinel"
+				style="position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; visibility: hidden; display: block;"><img
+				src="./sobre/image/sobre-slide-01.jpg" height="826" width="2000"
+				style="visibility: hidden;"></li>
+
+
+
+
+
+
+			<li class="cycle-slide"
+				style="position: absolute; top: 0px; left: 0px; z-index: 100; opacity: 0; display: none;"><img
+				src="./sobre/image/sobre-slide-01.jpg" height="826" width="2000"></li>
+			<li class="cycle-slide cycle-slide-active"
+				style="position: absolute; top: 0px; left: 0px; z-index: 99; display: block; opacity: 1;"><img
+				src="./sobre/image/sobre-slide-02.jpg" height="826" width="2000"></li>
+			<li class="cycle-slide"
+				style="position: absolute; top: 0px; left: 0px; z-index: 97; display: none;"><img
+				src="./sobre/image/sobre-slide-03.jpg" height="826" width="2000"></li>
+			<li class="cycle-slide"
+				style="position: absolute; top: 0px; left: 0px; z-index: 96; display: none;"><img
+				src="./sobre/image/sobre-slide-04.jpg" height="826" width="2000"></li>
+			<li class="cycle-slide"
+				style="position: absolute; top: 0px; left: 0px; z-index: 95; display: none;"><img
+				src="./sobre/image/sobre-slide-05.jpg" height="826" width="2000"></li>
+			<li class="cycle-slide"
+				style="position: absolute; top: 0px; left: 0px; z-index: 94; display: none;"><img
+				src="./sobre/image/sobre-slide-06.jpg" height="826" width="2000"></li>
+		</ul>
+	</div>
+
+	<section class="main-services">
+
+		<section class="services">
+			<div class="item-service">
+				<div class="box-circle">
+					<div class="circle">
+						<i class="lapis"> <span class="line-lapis"></span>
+						</i>
+					</div>
+				</div>
+
+				<div class="content-service">
+					<h1 class="title-service">品牌管理</h1>
+					<p class="excerpt-service">
+						开发和管理品牌定位他们正确和促进您的公司的价值。小心您的品牌需要是连续的所以，我们分析和诊断以最佳的方式进行通讯和产生的结果，为您的公司可能出现的错误。
+					</p>
+					<span class="tag-service">设计</span> <span class="tag-service">战略</span>
+					<span class="tag-service">规划</span>
+
+				</div>
+
+			</div>
+
+			<div class="item-service">
+				<div class="box-circle">
+					<div class="circle">
+						<i class="monitor"></i>
+						<div class="tela-monitor">
+							<span class="tela tela-grande"></span> <span
+								class="tela tela-pequena"></span> <span class="tela tela-media"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-service">
+					<h1 class="title-service">网站设计 &amp; UI</h1>
+					<p class="excerpt-service">Web 开发重点放在可用性、
+						了解用户的行为如何，知道他的需要，可以加入它。了解观众的需要，并提供最好的 web 经验的他，无论他在哪里。使用 SEO
+						技术，让市民在网络上找到您的品牌。</p>
+					<span class="tag-service">网站</span> <span class="tag-service">移动</span>
+					<span class="tag-service">电子邮件营销</span>
+				</div>
+
+			</div>
+
+			<div class="item-service">
+				<div class="box-circle">
+					<div class="circle">
+						<i class="browser"> <span>&lt;html5&gt;</span>
+						</i>
+					</div>
+				</div>
+
+				<div class="content-service">
+					<h1 class="title-service">发展 &amp; CMS开发</h1>
+					<p class="excerpt-service">
+						支持和对所有视觉一致性为客户制作在更合适的平台，无论是手机还是一个巨大的屏幕。我们的工作主要是与 Wordpress，一个灵活的
+						CMS 和易于管理。我们在您的平台上有一组开发人员准备任何必要的支持。</p>
+					<span class="tag-service">前端</span> <span class="tag-service">后端</span>
+					<span class="tag-service">Wordpress</span>
+				</div>
+
+			</div>
+		</section>
+
+	</section>
+
+	<section class="who">
+
+		<section class="title-page">
+			<h1>Zeropixel 是谁？</h1>
+			<h4>这是使我们的项目发生的人群</h4>
+		</section>
+
+		<ul class="listagem-equipe">
+			<li class="avatar"><span class="mac float"></span> <span
+				class="name">Mac Gyovanni</span> <span class="job"> 首席执行官-Web
+					开发人员</span>
+				<p class="excerpt">管理员和前端。管理所有的 web 开发协调前端和后端的工作室</p>
+				<div class="link-social">
+					<ul class="social">
+						<li class="redes"><a target="_blank" class="icon-twitter"
+							href="http://twitter.com/maclevison"></a></li>
+						<li class="redes"><a target="_blank" class="icon-facebook"
+							href="http://fb.com/maclevison"></a></li>
+						<li class="redes"><a target="_blank" class="icon-linkedin"
+							href="http://www.linkedin.com/in/maclevison"></a></li>
+					</ul>
+				</div></li>
+
+			<li class="avatar"><span class="carlyson float"></span> <span
+				class="name">Carlyson Oliveira</span> <span class="job">首席执行官-导演创作的</span>
+				<p class="excerpt">公关人员的专业和职业的设计器。负责 Zeropixel 的可视部分</p>
+				<div class="link-social">
+					<ul class="social">
+						<li class="redes"><a target="_blank" class="icon-twitter"
+							href="http://twitter.com/carlyson"></a></li>
+						<li class="redes"><a target="_blank" class="icon-facebook"
+							href="http://fb.com/carlyson"></a></li>
+						<li class="redes"><a target="_blank" class="icon-linkedin"
+							href="http://www.linkedin.com/in/carlyson"></a></li>
+					</ul>
+				</div></li>
+
+			<li class="avatar"><span class="hugo float"></span> <span
+				class="name">Hugo Oliveira</span> <span class="job">事件管理器</span>
+				<p class="excerpt">是一名记者和事件和战略品牌体验创建由工作室负责</p>
+				<div class="link-social">
+					<ul class="social">
+						<li class="redes"><a target="_blank" class="icon-twitter"
+							href="http://twitter.com/oliveira_hugo"></a></li>
+						<li class="redes"><a target="_blank" class="icon-facebook"
+							href="http://fb.com/oliveirahugo12"></a></li>
+						<li class="redes"><a target="_blank" class="icon-linkedin"
+							href="http://www.linkedin.com/in/hugooliveira12"></a></li>
+					</ul>
+				</div></li>
+
+			<li class="avatar"><span class="elder float"></span> <span
+				class="name">Elder Pinto</span> <span class="job">前端开发人员</span>
+				<p class="excerpt">毕业于信息系统是 Zeropixel 前端忍者。由挑战和创新项目提供动力。</p>
+				<div class="link-social">
+					<ul class="social">
+						<li class="redes"><a target="_blank" class="icon-twitter"
+							href="http://twitter.com/ElderPintto"></a></li>
+						<li class="redes"><a target="_blank" class="icon-facebook"
+							href="http://fb.com/eldersilvap"></a></li>
+						<li class="redes"><a target="_blank" class="icon-linkedin"
+							href="http://www.linkedin.com/in/elderpinto"></a></li>
+					</ul>
+				</div></li>
+		</ul>
+
+	</section>
+
+	<div class="top back-to-top" style="display: none;">
+		<a href="http://zeropixel.com.br/sobre/#top">返回页首</a>
+	</div>
+
+
+	<div id="contact" class="foot">
+		<div>
+			<footer>
+				<section class="title-footer">
+					<h1>对我们说： 你好 ！</h1>
+					<h4>我们期待着您的联系人交流一些想法在这里。</h4>
+				</section>
+
+				<section class="info-contact">
+					<div class="where">
+						<span class="title">地址：</span>
+
+						<address>
+							<p>
+								<a href="http://bit.ly/1c2G3wa" target="_blank"> <span
+									class="address">四川省绵阳市花园崇尚三单元六楼五号</span> <span class="locality">四川-绵阳</span>
+								</a>
+							</p>
+						</address>
+					</div>
+
+					<div class="how">
+						<span class="title">怎么做?</span> <span class="email"> <a
+							href="http://zeropixel.com.br/oi@zeropixel.com.br"
+							target="_blank">171665414@qq.com</a>
+						</span> <span class="phone"> <a href="callto:+558233177586"
+							target="_blank">15281672434</a> <a href="callto:+558230215586"
+							target="_blank">15281672434</a>
+						</span>
+					</div>
+
+					<div class="footer-social">
+						<div>
+							<span class="desc-social">是我们的朋友，我们很酷。</span>
+							<ul class="social">
+								<li class="redes"><a target="_blank" class="icon-twitter"
+									href="http://twitter.com/zeropixel"></a></li>
+								<li class="redes"><a target="_blank" class="icon-facebook"
+									href="http://fb.com/zeropixel"></a></li>
+								<li class="redes"><a target="_blank" class="icon-instagram"
+									href="http://instagram.com/estudiozeropixel"></a></li>
+								<li class="redes"><a target="_blank" class="icon-pinterest"
+									href="http://pinterest.com/zeropixel"></a></li>
+								<li class="redes"><a target="_blank" class="icon-youtube"
+									href="https://youtube.com.br/estudiozeropixel"></a></li>
+								<li class="redes"><a target="_blank" class="icon-vimeo"
+									href="http://vimeo.com/zeropixel"></a></li>
+								<li class="redes"><a target="_blank"
+									class="icon-foursquare" href="http://4sq.com/dUKV1z"></a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</footer>
+		</div>
+	</div>
+	<div style="display: none"></div>
+	<script type="text/javascript" src="./public/js/devicepx-jetpack.js"></script>
+	<script type="text/javascript" src="./public/js/gprofiles.js"></script>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var WPGroHo = {
+			"my_hash" : ""
+		};
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="./public/js/wpgroho.js"></script>
+	<script type="text/javascript" src="./public/js/main.min.js"></script>
+	<script type="text/javascript">
+		st_go({
+			v : 'ext',
+			j : '1:2.9.3',
+			blog : '63854016',
+			post : '2',
+			tz : '-3'
+		});
+		var load_cmc = function() {
+			linktracker_init(63854016, 2, 2);
+		};
+		if (typeof addLoadEvent != 'undefined')
+			addLoadEvent(load_cmc);
+		else
+			load_cmc();
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		});
+		ga('create', 'UA-22513742-2', 'zeropixel.com.br');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

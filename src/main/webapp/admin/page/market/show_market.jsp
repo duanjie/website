@@ -1,0 +1,83 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<%@ include file="../common/header.jsp"%>
+<base href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/">
+
+
+
+
+
+
+
+<div class="MainDiv">
+<table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+  <tr>
+      <th class="tablestyle_title" >网站营销</th>
+  </tr>
+  <tr>
+    <td class="CPanel">
+		
+		<table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+
+		<TR>
+			<TD width="100%">
+				<fieldset style="height:100%;">
+				<legend>网站建设信息</legend>
+					  <table border="0" cellpadding="2" cellspacing="1" style="width:100%">
+					   <tr>
+					    <td nowrap align="right">网站营销标题：</td>
+						 <td>${siteInformation.emailAddress}</td>
+					  </tr>
+					  <tr>
+					    <td nowrap align="right" width="13%">网站营销图片：</td>
+					    <td width="43%">
+					    <img id="logoUrl" alt="" src="${siteInformation.logoUrl}"/>
+					   <%--      <img id="logoUrl" alt="" src="${siteInformation.logoUrl}"/> <input type="file" onchange="onchangeLogo(this)"/> --%>
+					     	  <%-- <div><img id="ImgPr"  width="136" height="40" src="${siteInformation.logoUrl}"/></div>
+                             <input type="file" id="up" /> 
+                            <input type="hidden" value="${siteInformation.logoUrl}" name="logoUrl"/>  --%>
+                             <input type="hidden" value="${siteInformation.logoUrl}" name="logoUrl"/> 
+					     </td>
+					    </tr>
+					  <tr>
+					    <td nowrap align="right">网站营销内容：</td>
+					    <td>${siteInformation.title}</td>
+					  </tr>
+					 
+					  </table>
+			 <br />
+				</fieldset>			</TD>
+		</TR>
+		
+		</TABLE>
+	
+	
+	 </td>
+  </tr>
+		<!-- <TR>
+			<TD colspan="2" align="center" height="50px">
+			<input type="submit" value="保存" class="button"/>　
+			
+			<input type="button" value="返回" class="button" onclick="window.history.go(-1);"/></TD>
+		</TR> -->
+		</TABLE>
+	
+	
+	 </td>
+  </tr>
+  </table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%@ include file="../common/footer.jsp"%>

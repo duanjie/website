@@ -1,0 +1,144 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:Album.java
+ * Package Name:com.lsh.site.entity
+ * Date:2014年4月25日上午9:50:14
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.entity;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Length;
+
+import java.util.Set;
+
+/**
+ * 
+ * ClassName: Album <br/>
+ * Description: 相册
+ * date: 2014年5月26日 上午11:20:26 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Entity
+@Table(name = "t_album")
+@SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_album_sequence")
+public class Album extends BaseEntity {
+
+	private static final long serialVersionUID = 1L;
+
+	private String author;                                     //作者
+ 
+	private String description;                                //描述
+
+	private Menu menu;                                         //菜单
+
+	private String shortTitle;                                 //简短标题，列表中显示
+
+	private String tag;                                        //标签
+
+	private String title;                                      //标题
+
+	private String titleColor;                                  //标题颜色
+
+	private int topLevel;                                       //固定级别,默认 0：不置顶。
+
+	private Set<Image> Images;                                   //该相册下的图片
+
+	@Length(max = 10)
+	public String getAuthor() {
+		return this.author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	@Length(max = 255)
+	public String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	@OneToOne
+	@JoinColumn(name = "menu_id", updatable = false)
+	public Menu getMenu() {
+		return menu;
+	}
+
+	/**
+	 * menu.
+	 * 
+	 * @param menu
+	 *            the menu to set
+	 */
+	public void setMenu(Menu menu) {
+		this.menu = menu;
+	}
+
+	@Length(max = 35)
+	@Column(name = "short_title")
+	public String getShortTitle() {
+		return this.shortTitle;
+	}
+
+	public void setShortTitle(String shortTitle) {
+		this.shortTitle = shortTitle;
+	}
+
+	@Length(max = 40)
+	public String getTag() {
+		return this.tag;
+	}
+
+	public void setTag(String tag) {
+		this.tag = tag;
+	}
+
+	@NotNull
+	@Length(max = 75)
+	public String getTitle() {
+		return this.title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	@Length(max = 10)
+	@Column(name = "title_color")
+	public String getTitleColor() {
+		return this.titleColor;
+	}
+
+	public void setTitleColor(String titleColor) {
+		this.titleColor = titleColor;
+	}
+
+	@Column(name = "top_level")
+	public int getTopLevel() {
+		return this.topLevel;
+	}
+
+	public void setTopLevel(int topLevel) {
+		this.topLevel = topLevel;
+	}
+
+	@OneToMany(mappedBy = "album")
+	public Set<Image> getImages() {
+		return this.Images;
+	}
+
+	public void setImages(Set<Image> Images) {
+		this.Images = Images;
+	}
+
+}

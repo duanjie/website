@@ -1,0 +1,45 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:ImageController.java
+ * Package Name:com.lsh.site.controller.admin
+ * Date:2014年5月30日上午10:01:38
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.controller.admin;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.lsh.site.Page;
+import com.lsh.site.Pageable;
+import com.lsh.site.controller.site.BaseController;
+import com.lsh.site.entity.Image;
+import com.lsh.site.service.ImageService;
+
+/**
+ * ClassName: ImageController <br/>
+ * Description: Image Controller<br/>
+ * date: 2014年5月30日 上午10:01:38 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Controller("leaveMessageController")
+@RequestMapping("admin/image")
+public class ImageController extends BaseController{
+	
+	@Resource(name="imageServiceImpl")
+	private ImageService imageService;
+	
+	@RequestMapping(value = "list")
+	public String list(Pageable pageable,Long albumId,Model model){
+		Page<Image> page = imageService.findPage(pageable);
+		model.addAttribute("page", page);
+		return "/admin/page/image/list";
+	}
+}

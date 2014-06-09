@@ -1,0 +1,191 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:SiteMarket.java
+ * Package Name:com.lsh.site.entity
+ * Date:2014年5月9日上午9:25:00
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Lob;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+import org.hibernate.validator.constraints.Length;
+
+/**
+ * ClassName: SiteMarket <br/>
+ * Description: 网站营销
+ * date: 2014年5月9日 上午9:25:00 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Entity
+@Table(name = "t_site_market")
+@SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_site_market_sequence")
+public class SiteMarket extends BaseEntity{
+
+	private static final long serialVersionUID = -7314882979077622296L;
+
+	@Length(min = 2, max = 45)
+	@Column(nullable = false,length = 45)
+	private String banner;
+	
+	@Length(min = 2, max = 45)
+	@Column(nullable = false,length = 45,name="item_one_image")
+	private String itemOneImage;
+	
+	@Length(min = 2, max = 30)
+	@Column(nullable = false,length = 30,name="item_one_title")
+	private String itemOneTitle;
+	
+	@Lob
+	@Column(nullable = false, name="item_one_content")
+	private String itemOneContent;
+	
+	
+	@Length(min = 2, max = 45)
+	@Column(nullable = false,length = 45,name="item_two_image")
+	private String itemTwoImage;
+	
+	@Length(min = 2, max = 30)
+	@Column(nullable = false,length = 30,name="item_two_title")
+	private String itemTwoTitle;
+	
+	@Lob
+	@Column(nullable = false, name="item_two_content")
+	private String itemTwoContent;
+
+	/**
+	 * banner.
+	 *
+	 * @return  the banner
+	 */
+	public String getBanner() {
+		return banner;
+	}
+
+	/**
+	 * banner.
+	 *
+	 * @param   banner    the banner to set
+	 */
+	public void setBanner(String banner) {
+		this.banner = banner;
+	}
+
+	/**
+	 * itemOneImage.
+	 *
+	 * @return  the itemOneImage
+	 */
+	public String getItemOneImage() {
+		return itemOneImage;
+	}
+
+	/**
+	 * itemOneImage.
+	 *
+	 * @param   itemOneImage    the itemOneImage to set
+	 */
+	public void setItemOneImage(String itemOneImage) {
+		this.itemOneImage = itemOneImage;
+	}
+
+	/**
+	 * itemOneTitle.
+	 *
+	 * @return  the itemOneTitle
+	 */
+	public String getItemOneTitle() {
+		return itemOneTitle;
+	}
+
+	/**
+	 * itemOneTitle.
+	 *
+	 * @param   itemOneTitle    the itemOneTitle to set
+	 */
+	public void setItemOneTitle(String itemOneTitle) {
+		this.itemOneTitle = itemOneTitle;
+	}
+
+	/**
+	 * itemOneContent.
+	 *
+	 * @return  the itemOneContent
+	 */
+	public String getItemOneContent() {
+		return itemOneContent;
+	}
+
+	/**
+	 * itemOneContent.
+	 *
+	 * @param   itemOneContent    the itemOneContent to set
+	 */
+	public void setItemOneContent(String itemOneContent) {
+		this.itemOneContent = itemOneContent;
+	}
+
+	/**
+	 * itemTwoImage.
+	 *
+	 * @return  the itemTwoImage
+	 */
+	public String getItemTwoImage() {
+		return itemTwoImage;
+	}
+
+	/**
+	 * itemTwoImage.
+	 *
+	 * @param   itemTwoImage    the itemTwoImage to set
+	 */
+	public void setItemTwoImage(String itemTwoImage) {
+		this.itemTwoImage = itemTwoImage;
+	}
+
+	/**
+	 * itemTwoTitle.
+	 *
+	 * @return  the itemTwoTitle
+	 */
+	public String getItemTwoTitle() {
+		return itemTwoTitle;
+	}
+
+	/**
+	 * itemTwoTitle.
+	 *
+	 * @param   itemTwoTitle    the itemTwoTitle to set
+	 */
+	public void setItemTwoTitle(String itemTwoTitle) {
+		this.itemTwoTitle = itemTwoTitle;
+	}
+
+	/**
+	 * itemTwoContent.
+	 *
+	 * @return  the itemTwoContent
+	 */
+	public String getItemTwoContent() {
+		return itemTwoContent;
+	}
+
+	/**
+	 * itemTwoContent.
+	 *
+	 * @param   itemTwoContent    the itemTwoContent to set
+	 */
+	public void setItemTwoContent(String itemTwoContent) {
+		this.itemTwoContent = itemTwoContent;
+	}
+	
+	
+}

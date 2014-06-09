@@ -1,0 +1,29 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:MenuContentRelationServiceImpl.java
+ * Package Name:com.lsh.site.service.impl
+ * Date:2014年5月8日下午5:06:55
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.service.impl;
+
+
+import org.springframework.stereotype.Service;
+
+import com.lsh.site.entity.MenuContentRelation;
+import com.lsh.site.service.MenuContentRelationService;
+
+/**
+ * ClassName: MenuContentRelationServiceImpl <br/>
+ * Description: 类描述
+ * date: 2014年5月8日 下午5:06:55 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Service("menuContentRelationServiceImpl")
+public class MenuContentRelationServiceImpl extends BaseServiceImpl<MenuContentRelation, Long> implements MenuContentRelationService{
+
+}

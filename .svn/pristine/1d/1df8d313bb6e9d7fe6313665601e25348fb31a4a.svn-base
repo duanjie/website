@@ -1,0 +1,100 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:Article.java
+ * Package Name:com.lsh.site.entity
+ * Date:2014年5月21日上午9:38:22
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+import org.hibernate.validator.constraints.Length;
+
+/**
+ * ClassName: Article <br/>
+ * Description: 文章
+ * date: 2014年5月21日 上午9:38:22 <br/>
+ *
+ * @author YangEnHua
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Entity
+@Table(name="t_article")
+@SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_article_sequence")
+public class Article  extends BaseEntity{
+
+	private static final long serialVersionUID = 1L;
+	@Column(name = "menu_id")
+	private  Long menuId;
+	
+	@Length(min = 2, max = 90)
+	@Column(nullable = false, length = 100)
+	private  String title;
+	
+	@Length(min = 0, max = 30)
+	@Column(name = "brief_title", length = 30)
+	private  String briefTitle;
+	
+	@Length(min = 0, max = 10)
+	@Column(length = 10)
+	private  String author;
+	
+	@Column(nullable = false)
+	private  String content;
+	
+	@Column(name="title_color")
+	private String titleColor;
+	
+	@Column(name="title_level")
+	private Long topLevel;
+	
+	public Long getMenuId() {
+		return menuId;
+	}
+	public void setMenuId(Long menuId) {
+		this.menuId = menuId;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public String getBriefTitle() {
+		return briefTitle;
+	}
+	public void setBriefTitle(String briefTitle) {
+		this.briefTitle = briefTitle;
+	}
+	public String getTitleColor() {
+		return titleColor;
+	}
+	public void setTitleColor(String titleColor) {
+		this.titleColor = titleColor;
+	}
+	public Long getTopLevel() {
+		return topLevel;
+	}
+	public void setTopLevel(Long topLevel) {
+		this.topLevel = topLevel;
+	}
+}

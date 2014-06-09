@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+	class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>事件</title>
+
+<link rel="stylesheet" href="./public/css/language-selector.css"
+	type="text/css" media="all">
+
+<meta name="robots" content="index, follow">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!-- <link rel="shortcut icon" type="image/x-icon" href="http://zeropixel.com.br/wp-content/themes/zeropixel/favicon.ico"> -->
+<link rel="stylesheet" id="jetpack-subscriptions-css"
+	href="./public/css/subscriptions.css" type="text/css" media="all">
+<link rel="stylesheet"
+	id="advanced-responsive-video-embedder-plugin-styles-css"
+	href="./public/css/public.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-widgets-css"
+	href="./public/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="zeropixel-style-css"
+	href="./public/css/style.css" type="text/css" media="all">
+<script src="./public/js/analytics.js"></script>
+<script type="text/javascript" src="./public/js/jquery.js"></script>
+<script type="text/javascript" src="./public/js/jquery-migrate.min.js"></script>
+<script type="text/javascript"
+	src="./public/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<meta name="generator" content="WordPress 3.8.3">
+<script type="text/javascript">
+	var icl_lang = 'pt-br';
+	var icl_home = 'http://我们的.com/';
+</script>
+<script type="text/javascript" src="./public/js/sitepress.js"></script>
+<meta name="generator" content="WPML ver:2.7.1 stt:44,1;0">
+<style type="text/css">
+.arve-thumb-wrapper {
+	width: 300px;
+}
+
+.arve-normal-wrapper {
+	width: 1170px;
+}
+
+.arve-normal-wrapper.alignleft,.arve-normal-wrapper.alignright,.arve-normal-wrapper.aligncenter
+	{
+	width: 400px;
+}
+</style>
+
+<meta name="description"
+	content="Nós somos o Zeropixel Eventos Buscamos transformar nossos eventos em experiências inesquecíveis, levando a expressão “fazer acontecer” ao pé da letra.">
+
+<meta property="og:title" content="描述">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Zeropixel - Estúdio Criativo">
+<meta property="fb:admins" content="1584386679">
+<meta property="og:description"
+	content="Nós somos o Zeropixel Eventos  Buscamos transformar nossos eventos em experiências inesquecíveis, levando a expressão “fazer acontecer” ao pé da letra.    Nosso objetivo não é apenas realizar um simples evento, promoção ou ativação de um produto específico, mas sim trabalhar brand experience, potencializando resultados e impactando as pessoas. Tudo isso é feito através do que acreditamos, de nossas referências e mostrando que é possível transformar cenários com criatividade. Todos os nossos eventos são realizados com a nossa participação na curadoria, o que torna o processo mais interessante. Nós temos conteúdo, nós fazemos experiências!">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description"
+	content="Nós somos o Zeropixel Eventos  Buscamos transformar nossos eventos em experiências inesquecíveis, levando a expressão “fazer acontecer” ao pé da letra.    Nosso objetivo não é apenas realizar um simples evento, promoção ou ativação de um produto específico, mas sim trabalhar brand experience, potencializando resultados e impactando as pessoas. Tudo isso é feito através do que acreditamos, de nossas referências e mostrando que é possível transformar cenários com criatividade. Todos os nossos eventos são realizados com a nossa participação na curadoria, o que torna o processo mais interessante. Nós temos conteúdo, nós fazemos experiências!">
+<link rel="stylesheet" type="text/css" id="gravatar-card-css"
+	href="./public/css/hovercard.css">
+<link rel="stylesheet" type="text/css" id="gravatar-card-services-css"
+	href="./public/css/services.css">
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+		<p class="chromeframe">你使用的浏览器 <strong>过时的</strong>。 请 <a href="http://browsehappy.com/">更新您的浏览器</a> 或 <a href="http://www.google.com/chromeframe/?redirect=true">激活谷歌 Chrome Frame</a> 为了改善您的体验。</p>
+	<![endif]-->
+	<header class="fix-menu header-nav fixed">
+		<div class="logo">
+			<a href="#我们的网址"> <img id="logo_136_40"
+				src="./index/image/logo_136_40.png" />
+			</a>
+		</div>
+
+		<nav class="nav-wrap">
+
+			<button class="navbar-toggle" type="button" data-toggle="collapse"
+				data-target=".bs-navbar-collapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+
+			<ul id="menu-principal" class="menu">
+				<li id="menu-item-24"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a
+					href="index.htm">首页</a></li>
+				<li id="menu-item-27"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a
+					href="projetos.htm">案例展示</a></li>
+				<li id="menu-item-28"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a
+					href="website_construction.htm">网站建设</a></li>
+				<li id="menu-item-25"
+					class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-16 current_page_item menu-item-25"><a
+					href="eventos.htm">网站营销</a></li>
+				<li id="menu-item-29"
+					class="anchor menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a
+					href="http://192.168.1.104:8080/LSHWebSite/projetos.htm#contact">关于我们</a></li>
+			</ul>
+		</nav>
+
+	</header>
+	<div class="banner-interna">
+
+		<section class="header-banner">
+			<div>
+				<h1 class="title">我们是 Zeropixel 事件</h1>
+				<h4 class="subtitle">
+					我们寻求将我们的事件转化为难忘的经历，以表达"让它发生"到信<br>
+				</h4>
+				<div class="icons-header">
+
+					<div class="circle">
+						<b class="raio"></b>
+					</div>
+
+					<div class="circle">
+						<div class="engrenagem"></div>
+					</div>
+
+					<div class="circle">
+						<div class="grafic">
+							<div class="column col-1"></div>
+							<div class="column col-2"></div>
+							<div class="column col-3"></div>
+						</div>
+					</div>
+				</div>
+				<div class="text-header">
+					<p>我们的目标并不是产品的只执行简单的事件、 晋升或激活特定，但宁愿工作，加强品牌的经验、 成果和影响的人。</p>
+					<p>所有这些都是通过我们相信我们的引用和显示它是可以变换与创造力的方案。我们所有的事件与我们在佐，使该过程更有趣的参与举行。我们有的内容，我们做实验
+						！</p>
+				</div>
+			</div>
+		</section>
+
+		<ul class="cycle-slideshow" data-cycle-fx="fadeout"
+			data-cycle-speed="3000" data-cycle-timeout="2000"
+			data-cycle-easing="linear" data-cycle-slides="&gt; li"
+			style="position: relative;">
+			<li class="cycle-slide cycle-sentinel"
+				style="position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; visibility: hidden; display: block;"><img
+				src="./eventos/image/eventos-slide-01.jpg" height="826" width="2000"
+				style="visibility: hidden;"></li>
+
+
+
+
+
+			<li class="cycle-slide cycle-slide-active"
+				style="position: absolute; top: 0px; left: 0px; z-index: 99; opacity: 1; display: block;"><img
+				src="./eventos/image/eventos-slide-01.jpg" height="826" width="2000"></li>
+			<li class="cycle-slide"
+				style="position: absolute; top: 0px; left: 0px; z-index: 97; display: none; opacity: 0;"><img
+				src="./eventos/image/eventos-slide-02.jpg" height="826" width="2000"></li>
+			<li class="cycle-slide"
+				style="position: absolute; top: 0px; left: 0px; z-index: 96; display: none; opacity: 0;"><img
+				src="./eventos/image/eventos-slide-03.jpg" height="826" width="2000"></li>
+			<li class="cycle-slide"
+				style="position: absolute; top: 0px; left: 0px; z-index: 95; display: none; opacity: 0;"><img
+				src="./eventos/image/eventos-slide-04.jpg" height="826" width="2000"></li>
+			<li class="cycle-slide"
+				style="position: absolute; top: 0px; left: 0px; z-index: 100; display: block; opacity: 0.10199999999999998;"><img
+				src="./eventos/image/eventos-slide-05.jpg" height="826" width="2000"></li>
+		</ul>
+	</div>
+
+	<section class="main-events">
+		<section class="events">
+			<div class="item-event">
+				<figure class="img-event">
+					<img width="141" height="170" src="./eventos/image/asm.png"
+						class="attachment-thumbnail wp-post-image" alt="asm">
+				</figure>
+
+				<h1 class="title-event">阿拉戈斯州社会媒体</h1>
+				<div class="text-event">
+					<p>认为是巴西的最伟大的社会媒体事件之一，阿拉戈斯州社会媒体已巩固其地位国家日历中的事件涉及互联网、 创新、
+						数字化营销和社会媒体。</p>
+					<p>成功保障自其第一版，在 2012 年 10 月，当近 500 人参加聚集在 Maceió
+						大西洋套房的礼堂举行。去年，该事件被分为两个领域，与 50 个小时的内容和观众的约 600 名参与者。</p>
+					<p>ASM，他众所周知，已经计算出的数量与国家和国际的发言者，在他们之中，吉娜 Gotthilf、 市场营销的头和
+						Duolingo ； 通信的存在彼得端口，头的品牌战略的 Twitter 的 ；里卡多 · 汤姆 Meriam，一位顾问为运动的
+						you.s。 奧巴馬主席 ；Gal Barradas，联席主席的基布等圣保罗 ；Unsaved、 毛里西奥 · Cid
+						和创新经理乔罗莎 Hermann R7 门户的编辑器。</p>
+				</div>
+
+				<div class="see-website">
+					<a href="http://alagoassocialmedia.com.br/" target="_blank">查阅事件网站</a>
+				</div>
+			</div>
+			<div class="item-event">
+				<figure class="img-event">
+					<img width="141" height="170" src="./eventos/image/add.png"
+						class="attachment-thumbnail wp-post-image" alt="add">
+				</figure>
+
+				<h1 class="title-event">阿拉戈斯州 Dev 天</h1>
+				<div class="text-event">
+					<p>混合的天堂风景最美丽的城市之一的国家、 文化和技术的建议。所以是阿拉戈斯州 Dev 天事件参与者相交一整天专门谈论编程。</p>
+					<p>多哈发展议程的目的是经验的促进文化的开发人员，除了促进的专业人员和企业，在本地和全国市场的引用与互动之间交流。</p>
+					<p>第一版包括像迭戈 Eis，创始人 Tableless ； 名称伯纳德 · 德卢纳，头的产品开发在 Videolog 巴西
+						；Edu Agni，校园方巴西和顾问在用户体验上的馆长博客和法比奥 ·
+						秋田，共同-创始人/所有者在代码矿工。该事件仍会有一个面板上从阿拉戈斯州和由民众投票选出的三个闪电会谈的创业公司。</p>
+				</div>
+
+				<div class="see-website">
+					<a href="http://alagoasdevday.com.br/" target="_blank">查阅事件网站</a>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<div class="top back-to-top" style="display: none;">
+		<a href="http://zeropixel.com.br/sobre/#top">返回页首</a>
+	</div>
+
+
+	<div id="contact" class="foot">
+		<div>
+			<footer>
+				<section class="title-footer">
+					<h1>一个始终不变的曾诺————设计经典</h1>
+				</section>
+
+				<section class="info-contact">
+					<div class="where">
+						<span class="title">地址：</span>
+
+						<address>
+							<p>
+								<a href="http://bit.ly/1c2G3wa" target="_blank"> <span
+									class="address">四川省绵阳市花园崇尚三单元六楼五号</span> <span class="locality">四川-绵阳</span>
+								</a>
+							</p>
+						</address>
+					</div>
+
+					<div class="how">
+						<span class="title">联系我们</span> <span class="email"> <a
+							href="http://zeropixel.com.br/oi@zeropixel.com.br"
+							target="_blank">171665414@qq.com</a>
+						</span> <span class="phone"> <a href="callto:+558233177586"
+							target="_blank">15281672434</a> <a href="callto:+558230215586"
+							target="_blank">15281672434</a>
+						</span>
+					</div>
+
+					<div class="footer-social">
+						<div>
+							<span class="desc-social">网站建设</span>
+							
+						</div>
+					</div>
+				</section>
+			</footer>
+		</div>
+	</div>
+	<div style="display: none"></div>
+	<script type="text/javascript" src="./public/js/devicepx-jetpack.js"></script>
+	<script type="text/javascript" src="./public/js/gprofiles.js"></script>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var WPGroHo = {
+			"my_hash" : ""
+		};
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="./public/js/wpgroho.js"></script>
+	<script type="text/javascript" src="./public/js/main.min.js"></script>
+	<script type="text/javascript">
+		st_go({
+			v : 'ext',
+			j : '1:2.9.3',
+			blog : '63854016',
+			post : '2',
+			tz : '-3'
+		});
+		var load_cmc = function() {
+			linktracker_init(63854016, 2, 2);
+		};
+		if (typeof addLoadEvent != 'undefined')
+			addLoadEvent(load_cmc);
+		else
+			load_cmc();
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		});
+		ga('create', 'UA-22513742-2', 'zeropixel.com.br');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

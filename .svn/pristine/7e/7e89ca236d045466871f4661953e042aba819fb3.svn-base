@@ -1,0 +1,180 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+     <%@ page import="java.util.*"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="pt-BR"
+	class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<!--<![endif]-->
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/">
+<meta charset="utf-8">
+<title>绵阳联生活网络科技有限公司</title>
+<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+<link rel="stylesheet" href="public/css/language-selector.css"
+	type="text/css" media="all">
+<meta name="robots" content="index, follow">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" id="jetpack-subscriptions-css"
+	href="public/css/subscriptions.css" type="text/css" media="all">
+<link rel="stylesheet"
+	id="advanced-responsive-video-embedder-plugin-styles-css"
+	href="public/css/public.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-widgets-css"
+	href="public/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="zeropixel-style-css"
+	href="public/css/style.css" type="text/css" media="all">
+	
+<link rel="stylesheet" id="zeropixel-style-css"
+	href="public/css/style_top.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
+	
+<script src="public/js/analytics.js"></script>
+<script type="text/javascript" src="public/js/jquery.js"></script>
+<script type="text/javascript" src="public/js/jquery-migrate.min.js"></script>
+
+<script type="text/javascript"
+	src="public/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<meta name="generator" content="WordPress 3.8.3">
+<script type="text/javascript">
+	var icl_lang = 'pt-br';
+	var icl_home = 'http://我们的域.com/';
+</script>
+<script type="text/javascript" src="public/js/sitepress.js"></script>
+<meta name="generator" content="WPML ver:2.7.1 stt:44,1;0">
+<style type="text/css">
+.arve-thumb-wrapper {
+	width: 300px;
+}
+
+.arve-normal-wrapper {
+	width: 1170px;
+}
+
+.arve-normal-wrapper.alignleft,.arve-normal-wrapper.alignright,.arve-normal-wrapper.aligncenter
+	{
+	width: 400px;
+}
+
+
+</style>
+
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" id="gravatar-card-css"
+	href="public/css/hovercard.css">
+<link rel="stylesheet" type="text/css" id="gravatar-card-services-css"
+	href="public/css/services.css">
+</head>
+<body>
+	<!--[if lt IE 7]>
+		<p class="chromeframe">你使用的浏览器 <strong>过时的</strong>。 请 <a href="http://browsehappy.com/">更新您的浏览器</a> 或 <a href="http://www.google.com/chromeframe/?redirect=true">激活谷歌 Chrome Frame</a> 为了改善您的体验。</p>
+	<![endif]-->
+
+	
+	
+		<!-- <div class="inner">
+			<div class="video-viewport">
+				<video preload="auto" autoplay="autoplay" loop="loop" muted="muted"
+					width="1920" height="1080">
+				</video>
+				<div class="image-home"></div>
+			</div>
+		</div> -->
+		
+		
+		<!-- one bt one slider -->
+		<div class="wrape homeone">
+			<!-- <div class="fallback"><img src="images/home_page_1_fallback.jpg" alt="" /></div> -->
+			<div id="obo_slider">  				
+				<div class="oneByOne_item">
+					<a href="#"><img src="public/images/home1_slide_1.png" class="wp1_3 slide1_bot" alt="www.update8.com , ChinaCoder关注前端开发、关注中国IT从业者" /></a>		            
+					<span class="txt1">创意生活！创意生活！如您所想！与众不同！</span>			
+					<span class="txt2">无设计，不生活<br />好的设计令人心旷神怡</span>												
+					<span class="txt3 short">我们擅长新颖、简练的视觉设计表现手法，并整合创新战略，品牌建设，为客户提供创新的解决方案，以帮助提高品牌知名度和提升消费者体验的客户。
+		</span>												
+					<span class="txt4 txt4up"><a href="#"  onclick="javascript:window.open('#');" class="btn_l">Contact Us</a></span>
+				</div>
+				<div class="oneByOne_item">                                 	
+					<a href="#"><img src="public/images/home7_slide_2.png" class="wp1_3 wp1_left slide2_bot" alt="www.update8.com , ChinaCoder关注前端开发、关注中国IT从业者" /></a>			            
+					<span class="txt1 blue txt_right2">这是一个以国际4A标准来打造的团队</span>			
+					<span class="txt2 blue txt_right2" style="width:380px">一次合作，终身朋友</span>												
+					<span class="txt2 blue txt_right2" style="width:350px">一对一量身定制</span>												
+					<span class="txt4 txt_right2 txt4up"><a href="#" onclick="javascript:window.open('#');" class="btn_l">Contact Us</a></span>												
+				</div>	
+				<div class="oneByOne_item">
+					<a href="#"><img src="public/images/home7_slide_3.png" class="wp1_3 slide2_bot" alt="# , ChinaCoder关注前端开发、关注中国IT从业者" />	</a>	            
+					<span class="txt1">我们依然活着，因为我们一直在挑战</span>			
+					<span class="txt2">整合创意来诠释品牌的高<br />贵气质，前所未有的高端<br />
+					享受</span>												
+					<span class="txt3">创意是思维意识的表现，设计创意表现的结果，创意生活，从本站开始。</span>												
+					<span class="txt4" style="margin-top:15px"><a target="_blank" href="#');" class="btn_l">+企业QQ为好友</a></span>
+				</div>                                                                                              
+				<div class="oneByOne_item">                                 	
+					<a href="#"><img src="public/images/home7_slide_4.png" class="wp1_3 slide3_bot" alt="www.update8.com , ChinaCoder关注前端开发、关注中国IT从业者" />	</a>		            
+					<span class="txt1 blue">细节决定成败！服务决定价值！ </span>			
+					<span class="txt2 blue">我们的宗旨！</span>												
+					<span class="txt3 short">多年来，本站传播广结良友，和客户朋友们建立了忠实而坚定的亲密伙伴关系。本站始终坚守着“信、合、赢、上”的核心经营理念，得到了客户的广泛认可。
+		</span>												
+					<span class="txt4 txt4up"><a href="#" onclick="javascript:window.open('#');" class="btn_l">Contact Us</a></span>
+				</div>
+			</div>    
+		</div>
+		<!-- /one bt one slider -->
+		<div style="clear:both;"></div>
+	<div class="margin-screen">	
+		
+		<div class="menu-home">
+			<header class="fix-menu header-nav">
+				<div class="logo">
+					<a href="#我们公司的域名"> <img id="logo_136_40" src="${info.logoUrl}" />
+					</a>
+				</div>
+				<nav class="nav-wrap">
+					<button class="navbar-toggle" type="button" data-toggle="collapse"
+						data-target=".bs-navbar-collapse">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+
+					<ul id="menu-principal" class="menu">
+						<li id="menu-item-24"
+							class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-24" ><a
+							href="index.jsp">首页</a></li>
+						<li id="menu-item-27"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27 current-menu-item  ${pro }" ><a
+							href="projetos.jhtml">案例展示</a></li>
+						<li id="menu-item-28"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28 current-menu-item ${con }" ><a
+							href="site/construction.jhtml">网站建设</a></li>
+						<li id="menu-item-25"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25 current-menu-item ${mk } "><a
+							href="site/market.jhtml">网站营销</a></li>
+						<li id="menu-item-29"
+							class="anchor menu-item menu-item-type-custom menu-item-object-custom menu-item-29 current-menu-item ${at }" ><a
+							href="site/about.jhtml">关于我们</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
+	</div>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+	
+   <script type="text/javascript" src="public/js/jquery-runbanner.js"></script>
+	<script type="text/javascript">
+$(function(){
+    $('#obo_slider').runbanner({
+		className: 'oneByOne1', 	             
+		easeType: 'random',  //动画参数
+		/*
+		"rollIn", "fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "fadeInRight", "bounceIn", "bounceInDown", "bounceInUp", "bounceInLeft",        "bounceInRight", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight" (18种动画类型可调用)
+		*/
+		slideShow: true  //为false时不会自动播放
+	});  
+})
+
+</script>

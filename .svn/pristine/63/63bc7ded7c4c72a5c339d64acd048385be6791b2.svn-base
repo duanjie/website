@@ -1,0 +1,37 @@
+ <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding= "UTF-8"%>
+ <%@ include file="public/header.jsp"%> 
+ <base href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/">
+	<section class="main-events">
+		<section class="events">
+		    <div style="width: 1002px;height: 270px;">
+		    	<img alt="" src="market\image\banner9.jpg">
+		    </div>
+			<div class="item-event">
+				<figure class="img-event">
+					<img width="141" height="170" src="./market/image/www1.jpg"
+						class="attachment-thumbnail wp-post-image" alt="asm">
+				</figure>
+
+				<h1 class="title-event">网络标识设计</h1>
+				<div class="text-event">
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;网络标识和品牌是企业带给网络用户的第一印象。我们有全面的网络标识设计服务，其中包括标识设计，标识动画，品牌指南，信笺设计，名片设计，礼帖设计等等，以满足企业在品牌形象中传播的一致性。</p>
+				</div>
+			</div>
+			<div class="item-event">
+				<figure class="img-event">
+					<img width="141" height="170" src="./market/image/www2.jpg"
+						class="attachment-thumbnail wp-post-image" alt="add">
+				</figure>
+				<h1 class="title-event">搜索引擎优化</h1>
+				<div class="text-event">
+					<p>
+                      &nbsp;&nbsp;&nbsp;&nbsp;很多网络用户经常使用搜索引擎来获取需要的信息，而搜索引擎的工作则是依靠关键字查询匹配完成。因此通过优化网站架构和网页内容，可以有效提高网站在搜索引擎上的能见度。我们能为您提供成熟的搜索引擎优化方案，提高企业网站的搜索排名。</p>
+				</div>
+			</div>
+		</section>
+	</section>
+<%@ include file="public/footer.jsp" %> 
+	
+	
+	
+	

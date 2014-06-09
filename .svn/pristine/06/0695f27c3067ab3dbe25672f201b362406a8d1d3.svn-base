@@ -1,0 +1,113 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:LoginLog.java
+ * Package Name:com.lsh.site.entity
+ * Date:2014年6月3日下午5:15:57
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+/**
+ * ClassName: LoginLog <br/>
+ * Description: 登陆日志      <br/>
+ * date: 2014年6月3日 下午5:15:57 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Entity
+@Table(name = "t_login_log")
+@SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_login_log_sequence")
+public class LoginLog extends BaseEntity{
+
+	private static final long serialVersionUID = 8649926977968398531L;
+
+	
+	private String username;                     //登陆帐号
+	
+	private String ip;                           //登陆IP
+	
+	private Short status;                       //登陆状态,0:未成功，1:成功。
+	
+	private String browser;                     //登陆浏览器
+	
+
+	/**
+	 * username.
+	 *
+	 * @return  the username
+	 */
+	public String getUsername() {
+		return username;
+	}
+
+	/**
+	 * username.
+	 *
+	 * @param   username    the username to set
+	 */
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	/**
+	 * ip.
+	 *
+	 * @return  the ip
+	 */
+	public String getIp() {
+		return ip;
+	}
+
+	/**
+	 * ip.
+	 *
+	 * @param   ip    the ip to set
+	 */
+	public void setIp(String ip) {
+		this.ip = ip;
+	}
+
+	/**
+	 * status.
+	 *
+	 * @return  the status
+	 */
+	public Short getStatus() {
+		return status;
+	}
+
+	/**
+	 * status.
+	 *
+	 * @param   status    the status to set
+	 */
+	public void setStatus(Short status) {
+		this.status = status;
+	}
+
+	/**
+	 * browser.
+	 *
+	 * @return  the browser
+	 */
+	public String getBrowser() {
+		return browser;
+	}
+
+	/**
+	 * browser.
+	 *
+	 * @param   browser    the browser to set
+	 */
+	public void setBrowser(String browser) {
+		this.browser = browser;
+	}
+	
+}

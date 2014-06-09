@@ -1,0 +1,93 @@
+<%@ include file="../common/header.jsp"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/uploadPreview.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/admin/js/test.js"></script>
+<style type="text/css">
+<!--
+.atten {
+	font-size: 12px;
+	font-weight: normal;
+	color: #F00;
+}
+-->
+</style>
+  <form action="edit.jhtml" method="post">
+  <input type="hidden" name="id" value = "${siteInformation.id}">
+<div class="MainDiv">
+<table width="99%" border="0" cellpadding="0" cellspacing="0" class="CContent">
+  <tr>
+      <th class="tablestyle_title" >任务修改页面</th>
+  </tr>
+  <tr>
+    <td class="CPanel">
+		
+		<table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+		<tr><td align="left">
+		<input type="button" name="Submit" value="保存" class="button" onclick="alert('保存成功！');"/>　
+			
+			<input type="button" name="Submit2" value="返回" class="button" onclick="window.history.go(-1);"/>
+		</td></tr>
+
+		<TR>
+			<TD width="100%">
+				<fieldset style="height:100%;">
+				<legend>修改公司基本信息</legend>
+					  <table border="0" cellpadding="2" cellspacing="1" style="width:100%">
+					  <tr>
+					    <td nowrap align="right" width="13%">公司Logo:</td>
+					    <td width="43%">
+					    <img id="logoUrl" alt="" src="${siteInformation.logoUrl}"/>
+					   <%--      <img id="logoUrl" alt="" src="${siteInformation.logoUrl}"/> <input type="file" onchange="onchangeLogo(this)"/> --%>
+					     	<!--  <div><img id="ImgPr" width="120" height="120" /></div>
+                             <input type="file" id="up" /> -->
+                            <input type="hidden" value="${siteInformation.logoUrl}" name="logoUrl"/> 
+					     </td>
+					    </tr>
+					  <tr>
+					    <td nowrap align="right">标题:</td>
+					    <td><input name="title" class="text" style="width:220px"  value="${siteInformation.title}"/></td>
+					  </tr>
+					   <tr>
+					    <td nowrap align="right">公司地址</td>
+						 <td><input name="companyAddress" class="text" style="width:220px"  value="${siteInformation.companyAddress}"/></td>
+					  </tr>
+					   <tr>
+					    <td nowrap align="right">邮箱地址</td>
+						 <td><input name="emailAddress" class="text" style="width:220px"  value="${siteInformation.emailAddress}"/></td>
+					  </tr>
+					  <tr>
+					   		    <td nowrap align="right">联系电话</td>
+						 <td><input name="phone" class="text" style="width:220px"  value="${siteInformation.phone}"/></td>
+					    </tr>
+					  </table>
+			 <br />
+				</fieldset>			</TD>
+		</TR>
+		
+		</TABLE>
+	
+	
+	 </td>
+  </tr>
+		<TR>
+			<TD colspan="2" align="center" height="50px">
+			<input type="submit" value="保存" class="button"/>　
+			
+			<input type="button" value="返回" class="button" onclick="window.history.go(-1);"/></TD>
+		</TR>
+		</TABLE>
+	
+	
+	 </td>
+  </tr>
+  </table>
+
+</div>
+</form>
+<%@ include file="../common/footer.jsp"%>
+<script type="text/javascript">
+$(function () {
+    $("#up").uploadPreview({ Img: "ImgPr", Width: 120, Height: 120 });
+});
+</script>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+	class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>网站营销</title>
+<link rel="stylesheet" href="./public/css/language-selector.css"
+	type="text/css" media="all">
+<meta name="robots" content="index, follow">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" id="jetpack-subscriptions-css"
+	href="./public/css/subscriptions.css" type="text/css" media="all">
+<link rel="stylesheet"
+	id="advanced-responsive-video-embedder-plugin-styles-css"
+	href="./public/css/public.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-widgets-css"
+	href="./public/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="zeropixel-style-css"
+	href="./public/css/style.css" type="text/css" media="all">
+<script src="./public/js/analytics.js"></script>
+<script type="text/javascript" src="./public/js/jquery.js"></script>
+<script type="text/javascript" src="./public/js/jquery-migrate.min.js"></script>
+<script type="text/javascript"
+	src="./public/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<meta name="generator" content="WordPress 3.8.3">
+<script type="text/javascript">
+	var icl_lang = 'pt-br';
+	var icl_home = 'http://我们的.com/';
+</script>
+<script type="text/javascript" src="./public/js/sitepress.js"></script>
+<meta name="generator" content="WPML ver:2.7.1 stt:44,1;0">
+<style type="text/css">
+.arve-thumb-wrapper {
+	width: 300px;
+}
+
+.arve-normal-wrapper {
+	width: 1170px;
+}
+
+.arve-normal-wrapper.alignleft,.arve-normal-wrapper.alignright,.arve-normal-wrapper.aligncenter
+	{
+	width: 400px;
+}
+</style>
+
+<meta name="description"
+	content="绵阳 联生活 网站营销">
+<meta property="og:title" content="描述">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Zeropixel - Estúdio Criativo">
+<meta property="fb:admins" content="1584386679">
+<meta property="og:description"
+	content="绵阳 联生活">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description"
+	content="绵阳 联生活">
+<link rel="stylesheet" type="text/css" id="gravatar-card-css"
+	href="./public/css/hovercard.css">
+<link rel="stylesheet" type="text/css" id="gravatar-card-services-css"
+	href="./public/css/services.css">
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+		<p class="chromeframe">你使用的浏览器 <strong>过时的</strong>。 请 <a href="http://browsehappy.com/">更新您的浏览器</a> 或 <a href="http://www.google.com/chromeframe/?redirect=true">激活谷歌 Chrome Frame</a> 为了改善您的体验。</p>
+	<![endif]-->
+	<header class="fix-menu header-nav fixed">
+		<div class="logo">
+			<a href="#我们的网址"> <img id="logo_136_40"
+				src="./index/image/logo_136_40.png" />
+			</a>
+		</div>
+
+		<nav class="nav-wrap">
+
+			<button class="navbar-toggle" type="button" data-toggle="collapse"
+				data-target=".bs-navbar-collapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+
+			<ul id="menu-principal" class="menu">
+				<li id="menu-item-24"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a
+					href="index.htm">首页</a></li>
+				<li id="menu-item-27"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a
+					href="projetos.htm">案例展示</a></li>
+				<li id="menu-item-28"
+					class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a
+					href="website_construction.htm">网站建设</a></li>
+				<li id="menu-item-25"
+					class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-16 current_page_item menu-item-25"><a
+					href="eventos.htm">网站营销</a></li>
+				<li id="menu-item-29"
+					class="anchor menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a
+					href="projetos.htm#contact">关于我们</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="main-events">
+		<section class="events">
+		    <div style="width: 1002px;height: 270px;">
+		    	<img alt="" src="eventos\image\banner9.jpg">
+		    </div>
+			<div class="item-event">
+				<figure class="img-event">
+					<img width="141" height="170" src="./eventos/image/www1.jpg"
+						class="attachment-thumbnail wp-post-image" alt="asm">
+				</figure>
+
+				<h1 class="title-event">网络标识设计</h1>
+				<div class="text-event">
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;网络标识和品牌是企业带给网络用户的第一印象。我们有全面的网络标识设计服务，其中包括标识设计，标识动画，品牌指南，信笺设计，名片设计，礼帖设计等等，以满足企业在品牌形象中传播的一致性。</p>
+				</div>
+			</div>
+			<div class="item-event">
+				<figure class="img-event">
+					<img width="141" height="170" src="./eventos/image/www2.jpg"
+						class="attachment-thumbnail wp-post-image" alt="add">
+				</figure>
+				<h1 class="title-event">搜索引擎优化</h1>
+				<div class="text-event">
+					<p>
+                      &nbsp;&nbsp;&nbsp;&nbsp;很多网络用户经常使用搜索引擎来获取需要的信息，而搜索引擎的工作则是依靠关键字查询匹配完成。因此通过优化网站架构和网页内容，可以有效提高网站在搜索引擎上的能见度。我们能为您提供成熟的搜索引擎优化方案，提高企业网站的搜索排名。</p>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<div class="top back-to-top" style="display: none;">
+		<a href="http://zeropixel.com.br/sobre/#top">返回页首</a>
+	</div>
+
+
+	<div id="contact" class="foot">
+		<div>
+			<footer>
+				<section class="title-footer">
+					<h1>一个始终不变的曾诺————设计经典</h1>
+				</section>
+				<section class="info-contact">
+					<div class="where">
+						<span class="title">地址：</span>
+
+						<address>
+							<p>
+								<a href="http://bit.ly/1c2G3wa" target="_blank"> <span
+									class="address">四川省绵阳市花园崇尚三单元六楼五号</span> <span class="locality">四川-绵阳</span>
+								</a>
+							</p>
+						</address>
+					</div>
+
+					<div class="how">
+						<span class="title">联系我们</span> <span class="email"> <a
+							href="http://zeropixel.com.br/oi@zeropixel.com.br"
+							target="_blank">171665414@qq.com</a>
+						</span> <span class="phone"> <a href="callto:+558233177586"
+							target="_blank">15281672434</a> <a href="callto:+558230215586"
+							target="_blank">15281672434</a>
+						</span>
+					</div>
+
+					<div class="footer-social">
+						<div>
+							<span class="desc-social">网站建设</span>
+							
+						</div>
+					</div>
+				</section>
+			</footer>
+		</div>
+	</div>
+	<div style="display: none"></div>
+	<script type="text/javascript" src="./public/js/devicepx-jetpack.js"></script>
+	<script type="text/javascript" src="./public/js/gprofiles.js"></script>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var WPGroHo = {
+			"my_hash" : ""
+		};
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="./public/js/wpgroho.js"></script>
+	<script type="text/javascript" src="./public/js/main.min.js"></script>
+	<script type="text/javascript">
+		st_go({
+			v : 'ext',
+			j : '1:2.9.3',
+			blog : '63854016',
+			post : '2',
+			tz : '-3'
+		});
+		var load_cmc = function() {
+			linktracker_init(63854016, 2, 2);
+		};
+		if (typeof addLoadEvent != 'undefined')
+			addLoadEvent(load_cmc);
+		else
+			load_cmc();
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		});
+		ga('create', 'UA-22513742-2', 'zeropixel.com.br');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

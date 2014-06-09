@@ -1,0 +1,95 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<script type="text/javascript">
+<!--
+	
+//-->
+function loadContent(url){
+	$.get(url, function(result){
+	    $("#content").html(result);
+	  });
+}
+</script>
+<!-- Content container -->
+	<div id="container">
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="sidebar-tabs">
+		        <ul class="tabs-nav two-items">
+		            <li><a href="#general" title=""><i class="icon-reorder"></i></a></li>
+		            <li><a href="#stuff" title=""><i class="icon-cogs"></i></a></li>
+		        </ul>
+		        <div id="general">
+				    <!-- Main navigation -->
+			        <ul class="navigation widget">
+			            <li class="active"><a href="index.html" title=""><i class="icon-home"></i>主面板</a></li>
+			            <li><a href="#" title="信息管理" class="expand"><i class="icon-reorder"></i>信息管理<strong>4</strong></a>
+			                <ul>
+			                    <li><a href="javascript:loadContent('admin/article/list.jhtml')" title="文章管理">文章管理</a></li>
+			                    <li><a href="wysiwyg.html" title="相册管理">相册管理</a></li>
+			                    <li><a href="form_wizards.html" title="产品管理">产品管理</a></li>
+			                    <li><a href="form_wizards.html" title="招聘管理">招聘管理</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="#" title="互动管理" class="expand"><i class="icon-tasks"></i>互动管理<strong>4</strong></a>
+			                <ul>
+			                    <li><a href="components.html" title="">留言与反馈</a></li>
+			                    <li><a href="content_grid.html" title="">评论管理</a></li>
+			                    <li><a href="blank.html" title="">通知公告</a></li>
+			                    <li><a href="blank.html" title="">广告管理</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="#" title="用户与权限" class="expand"><i class="icon-picture"></i>用户与权限<strong>3</strong></a>
+			            	 <ul>
+			                    <li><a href="components.html" title="">用户管理</a></li>
+			                    <li><a href="content_grid.html" title="">会员组管理</a></li>
+			                    <li><a href="blank.html" title="">会员组权限管理</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="#" title="日志管理" class="expand"><i class="icon-th"></i>日志管理<strong>2</strong></a>
+			            	 <ul>
+			                    <li><a href="components.html" title="">操作日志</a></li>
+			                    <li><a href="content_grid.html" title="">登陆日志</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="#" title="统计功能" class="expand"><i class="icon-signal"></i>统计功能<strong>12</strong></a>
+			            	 <ul>
+			                    <li><a href="components.html" title="">会员注册统计</a></li>
+			                    <li><a href="content_grid.html" title="">评论统计</a></li>
+			                    <li><a href="content_grid.html" title="">留言统计</a></li>
+			                    <li><a href="content_grid.html" title="">独立IP统计</a></li>
+			                    <li><a href="content_grid.html" title="">独立访客统计</a></li>
+			                    <li><a href="content_grid.html" title="">人均浏览次数统计</a></li>
+			                    <li><a href="content_grid.html" title="">来访网站统计</a></li>
+			                    <li><a href="content_grid.html" title="">来访页面统计</a></li>
+			                    <li><a href="content_grid.html" title="">搜索关键字统计</a></li>
+			                    <li><a href="content_grid.html" title="">受访页面统计</a></li>
+			                    <li><a href="content_grid.html" title="">地区分布统计</a></li>
+			                    <li><a href="content_grid.html" title="">统计初始化</a></li>
+			                </ul>
+			            </li>
+			            <li><a href="#" title="系统管理" class="expand"><i class="icon-copy"></i>系统管理<strong>8</strong></a>
+			            	 <ul>
+			                    <li><a href="components.html" title="">内容关键字管理</a></li>
+			                    <li><a href="content_grid.html" title="">自定义模型管理</a></li>
+			                    <li><a href="content_grid.html" title="">网页信息采集</a></li>
+			                    <li><a href="content_grid.html" title="">模块管理</a></li>
+			                    <li><a href="content_grid.html" title="">数据备份与恢复</a></li>
+			                    <li><a href="content_grid.html" title="">网站防火墙</a></li>
+			                    <li><a href="content_grid.html" title="">附件管理</a></li>
+			                    <li><a href="content_grid.html" title="">开启支持PC端，移动设备</a></li>
+			                </ul>
+			            </li>
+			        </ul>
+			        <!-- /main navigation -->
+		        </div>
+		        <div id="stuff">
+                    <!-- Datepicker -->
+		        	<div class="widget">
+		        		<h6 class="widget-name"><i class="icon-calendar"></i>日历</h6>
+		                <div class="inlinepicker datepicker-liquid"></div>
+		            </div>
+		            <!-- /datepicker -->
+		        </div>
+		    </div>
+		</div>
+		<!-- /sidebar -->

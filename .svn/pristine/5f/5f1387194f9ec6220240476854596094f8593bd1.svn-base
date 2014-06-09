@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="page/common/header.jsp"%>
+<%@ include file="page/common/left.jsp"%>
+		<!-- Content -->
+		<div id="content">
+		    <!-- Content wrapper -->
+		    <div class="wrapper">
+			    <!-- Breadcrumbs line -->
+			    <div class="crumbs">
+		            <ul id="breadcrumbs" class="breadcrumb"> 
+		                <li><a href="index.html">Dashboard</a></li>
+		                <li class="active"><a href="calendar.html" title="">Calendar</a></li>
+		            </ul>
+		            <ul class="alt-buttons">
+		                <li><a href="#" title=""><i class="icon-signal"></i><span>统计</span></a></li>
+		                <li><a href="#" title=""><i class="icon-comments"></i><span>消息</span></a></li>
+		                <li class="dropdown"><a href="#" title="" data-toggle="dropdown"><i class="icon-tasks"></i><span>任务</span> <strong>(+16)</strong></a>
+		                	<ul class="dropdown-menu pull-right">
+		                        <li><a href="#" title=""><i class="icon-plus"></i>添加新任务</a></li>
+		                        <li><a href="#" title=""><i class="icon-cog"></i>设置</a></li>
+		                	</ul>
+		                </li>
+		            </ul>
+			    </div>
+			    <!-- /breadcrumbs line -->
+				<%@ include file = "page/common/content.jsp" %>
+		    </div>
+		    <!-- /content wrapper -->
+		</div>
+		<!-- /content -->
+
+	</div>
+	<!-- /content container -->
+<%@ include file="page/common/footer.jsp"%>

@@ -1,0 +1,33 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:ArticleDaoImpl.java
+ * Package Name:com.lsh.site.dao.impl
+ * Date:2014年5月21日上午9:56:33
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.dao.impl;
+
+
+import org.springframework.stereotype.Repository;
+
+import com.lsh.site.dao.ArticleDao;
+import com.lsh.site.entity.Article;
+
+/**
+ * ClassName: ArticleDaoImpl <br/>
+ * Description: 类描述
+ * date: 2014年5月21日 上午9:56:33 <br/>
+ *
+ * @author YangEnHua
+ * @version 1.0
+ * @since JDK 1.6
+ */
+
+@Repository("articleDaoImpl")
+public class ArticleDaoImpl extends BaseDaoImpl<Article, Long> implements ArticleDao{
+
+
+		
+	
+}

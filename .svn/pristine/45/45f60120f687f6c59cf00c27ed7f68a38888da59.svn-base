@@ -1,0 +1,38 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:CommonAttributes.java
+ * Package Name:com.lsh.site
+ * Date:2014年4月10日下午11:01:15
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site;
+
+/**
+ * 
+ * ClassName: CommonAttributes <br/>
+ * Description: 公共参数
+ * date: 2014年4月24日 下午5:31:59 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+public final class CommonAttributes {
+
+	/** 日期格式配比 */
+	public static final String[] DATE_PATTERNS = new String[] { "yyyy", "yyyy-MM", "yyyyMM", "yyyy/MM", "yyyy-MM-dd", "yyyyMMdd", "yyyy/MM/dd", "yyyy-MM-dd HH:mm:ss", "yyyyMMddHHmmss", "yyyy/MM/dd HH:mm:ss" };
+
+	/** website.xml文件路径 */
+	public static final String LSH_WEB_SITE_XML_PATH = "/website.xml";
+
+	/** website.properties文件路径 */
+	public static final String LSH_WEB_PROPERTIES_PATH = "/website.properties";
+
+	/**
+	 * 不可实例化
+	 */
+	private CommonAttributes() {
+	}
+
+}

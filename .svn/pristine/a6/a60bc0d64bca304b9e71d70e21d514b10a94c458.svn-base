@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website>
+	<setting name="siteName" value="联生活公司网站" />
+	<setting name="siteUrl" value="http://localhost" />
+	<setting name="logo" value="/upload/image/logo.gif" />
+</website>

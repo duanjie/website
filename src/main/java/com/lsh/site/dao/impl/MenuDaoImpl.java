@@ -1,0 +1,37 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:MenuDaoImpl.java
+ * Package Name:com.lsh.site.dao.impl
+ * Date:2014年5月5日下午2:39:40
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.dao.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.lsh.site.dao.MenuDao;
+import com.lsh.site.entity.Menu;
+
+/**
+ * ClassName: MenuDaoImpl <br/>
+ * Description: 菜单Dao实现
+ * date: 2014年5月5日 下午2:39:40 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Repository("menuDaoImpl")
+public class MenuDaoImpl extends BaseDaoImpl<Menu, Long> implements MenuDao{
+
+
+	@SuppressWarnings("unchecked")
+	public List<Menu> findTopLevelMenus() {
+	    String hql = "from Menu m where m.parent is null"; 
+	    return entityManager.createQuery(hql).getResultList();
+	}
+
+}

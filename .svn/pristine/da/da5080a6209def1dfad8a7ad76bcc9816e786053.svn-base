@@ -1,0 +1,42 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:SiteConstructionController.java
+ * Package Name:com.lsh.site.controller.admin
+ * Date:2014年5月9日上午11:01:58
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.controller.admin;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.lsh.site.controller.site.BaseController;
+import com.lsh.site.service.SiteConstructionService;
+
+/**
+ * ClassName: SiteConstructionController <br/>
+ * Description: 网站建设 Controller
+ * date: 2014年5月9日 上午11:01:58 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Controller("siteConstructionController")
+@RequestMapping(value = "admin/siteConstruction")
+public class SiteConstructionController extends BaseController{
+
+	@Resource(name = "siteConstructionServiceImpl")
+	private SiteConstructionService siteConstructionService;
+	
+	@RequestMapping(value = "/info", method = RequestMethod.GET)
+	public String info(ModelMap modelMap){
+		
+		return "";
+	}
+}

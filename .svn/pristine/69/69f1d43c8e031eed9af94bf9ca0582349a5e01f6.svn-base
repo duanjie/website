@@ -1,0 +1,110 @@
+	<%@ include file="public/header.jsp"%>
+	<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+	<base href="${pageContext.request.scheme}://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/">
+	<section class="main-services">
+ <%@ page import="java.util.*"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+		<section class="services">
+		<%-- 
+			<c:forEach var="webCons" items="${ webCons}"> 
+					<div class="item-service">
+				<div class="box-circle">
+					<div class="circle" width="80px;" height="80px;">
+					<!-- <b class="raio"></b> -->
+					<img alt="测试" src="${ webCons.webImgUrl}" >
+					</div>
+				</div>
+			
+				<div class="content-service">
+					<h1 class="title-service">${ webCons.webTitle}</h1>
+					<p class="excerpt-service">
+                                   ${ webCons.webContent}                                
+					</p>
+					<span class="tag-service">${webCons.webDirect}</span> 
+				</div>
+
+			</div>
+			</c:forEach> --%>
+		
+		
+			<div class="item-service">
+				<div class="box-circle">
+					<div class="circle">
+					<b class="raio"></b>
+					</div>
+				</div>
+			
+				<div class="content-service">
+					<h1 class="title-service">网站规划设计</h1>
+					<p class="excerpt-service">
+                                                                    我们的设计团队将为您的网站做总体规划设计，包括网站功能、结构框架和内容建议。我们会提供给您不同网页风格和界面的具体设计方案，并根据您的要求修改方案直至最终设计方案的选定。
+					</p>
+					<span class="tag-service">设计</span> <span class="tag-service">战略</span>
+					<span class="tag-service">规划</span>
+
+				</div>
+
+			</div>
+			
+
+			<div class="item-service">
+				<div class="box-circle">
+					<div class="circle">
+					  <div class="engrenagem"></div>
+						<i class="monitor"></i>
+						<div class="tela-monitor">
+						 <span class="tela tela-pequena"></span> 
+						 <span class="tela tela-media"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="content-service">
+					<h1 class="title-service">网站开发测试</h1>
+					<p class="excerpt-service">根据设计方案，我们的开发团队将进行具体的网站开发和测试。通过我们标准的开发模式和程序优化，确保增强您网站的稳定性和延展性，减少后期维护的费用。同时我们还会邀请您参与网站的功能测试和用户体验测试，并根据测试结果进行必要的修改。
+					</p>
+					<span class="tag-service">网站</span> <span class="tag-service">移动</span>
+					<span class="tag-service">电子邮件营销</span>
+				</div>
+
+			</div> 
+
+			<div class="item-service">
+				<div class="box-circle">
+					<div class="circle">
+					<div class="grafic">
+						<div class="column col-1"></div>
+						<div class="column col-2"></div>
+						<div class="column col-3"></div>
+					</div>
+					</div>
+				</div>
+
+				<div class="content-service">
+					<h1 class="title-service">网站运营维护</h1>
+					<p class="excerpt-service">
+						网站交付上线以后，我们将提供固定期限的免费维护。免费维护时间将由项目规模而决定。若超过免费维护时间，我们仍然可以根据您的要求，提供高性价比的维护或升级服务，减少您后期维护的烦恼。
+如果您对我们的产品和服务感兴趣，想获得更多详细信息，请联系我们。
+					</p>
+					<span class="tag-service">运营</span> <span class="tag-service">维护</span>
+				</div>
+
+			</div> 
+		</section>
+
+	</section>
+
+	<section class="who">
+
+		<section class="title-page">
+			<h1>绵阳联生活网络科技公司</h1>
+			<h4 style="text-align: left;line-height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;绵阳联生活网络科技公司作为绵阳地区一流的网站建设服务商，致力于为不同领域的客户提供系统化的网站解决方案，实现企业品牌线上线下传播的一致性。由于差异化竞争的需要，我们深知每一位客户对自己网站呈现的模式和网站功能都有独特的要求。因此，从网站的咨询策划、规划设计，到开发测试、营运维护，我们都会为您度身定制一套只属于您的一站式专业网站建设的解决方案。
+</h4>
+		</section>
+
+		<ul class="listagem-equipe">
+		</ul>
+
+	</section>
+
+<%@ include file="public/footer.jsp" %>

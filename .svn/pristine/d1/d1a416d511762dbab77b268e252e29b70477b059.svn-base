@@ -1,0 +1,154 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib uri="http://ckeditor.com" prefix="ckeditor" %>
+ <!-- /content wrapper -->
+    
+    
+     <div class="wrapper">
+     
+           <!-- Breadcrumbs line -->
+		  <div class="crumbs">
+		         <ul id="breadcrumbs" class="breadcrumb"> 
+		              <li><a href="javascript:loadContent('admin/article/list.jhtml')">文章管理</a></li>
+				             <li class="active"><a href="#" title="">${menu}</a></li>
+		         </ul>
+		         <ul class="alt-buttons">
+		             <li><a href="#" title=""><i class="icon-signal"></i><span>统计</span></a></li>
+		             <li><a href="#" title=""><i class="icon-comments"></i><span>消息</span></a></li>
+		             <li class="dropdown"><a href="#" title="" data-toggle="dropdown"><i class="icon-tasks"></i><span>任务</span> <strong>(+16)</strong></a>
+		             	<ul class="dropdown-menu pull-right">
+		                     <li><a href="#" title=""><i class="icon-plus"></i>添加新任务</a></li>
+		                     <li><a href="#" title=""><i class="icon-cog"></i>设置</a></li>
+		             	</ul>
+		             </li>
+		         </ul>
+		  </div>
+		  
+	    <h5 class="widget-name"><i class="icon-th"></i></h5>
+	    
+	    
+     	<ul class="toolbar">
+             <li><a href="javascript:loadContent('admin/article/showEdit.jhtml')" title=""><i class="icon-heart"></i><span>修改</span></a></li>
+             <li><a href="javascript:loadContent('admin/article/showAdd.jhtml')" title=""><i class="icon-plus"></i><span>添加</span></a></li>
+             <li><a href="javascript:loadContent('admin/article/list.jhtml')" title=""><i class="icon-cog"></i><span>查看</span></a></li>
+         </ul>
+	    
+        <form id="articleForm" class="form-horizontal" action="admin/article/edit.jhtml" method="post" name="editForm">
+        			<input type="hidden" value="${article.id }" name="id"></input>
+	                <fieldset>
+	                    <!-- Form validation -->
+	                    <div class="widget">
+	                        <div class="navbar"><div class="navbar-inner"><h6>添加文章</h6></div></div>
+	                    	<div class="well row-fluid">
+								
+	                            <div class="control-group">
+	                                <label class="control-label">菜单id: <span class="text-error">*</span></label>
+	                                <div class="controls">
+	                                    <input type="text"  readonly   class="validate[required] span12" name="menuId" value="${article.menuId }"  />
+	                                </div>
+	                            </div>
+	                            
+	                             <div class="control-group">
+	                                <label class="control-label">文章标题: <span class="text-error">*</span></label>
+	                                <div class="controls">
+	                                    <input type="text" class="validate[required] span12" name="title"  value="${article.title }"/>
+	                                </div>
+	                            </div>
+	                            
+	                             <div class="control-group">
+	                                <label class="control-label">文章简洁标题: <span class="text-error">*</span></label>
+	                                <div class="controls">
+	                                    <input type="text" class="validate[required] span12" name="briefTitle" value="${article.briefTitle }" />
+	                                </div>
+	                            </div>
+	                            
+	                             <div class="control-group">
+	                                <label class="control-label">文章作者: <span class="text-error">*</span></label>
+	                                <div class="controls">
+	                                    <input type="text" class="validate[required] span12" name="author" id="req" value="${article.author }"/>
+	                                </div>
+	                            </div>
+	                        
+	                            <!-- Color picker -->
+	                             <div class="control-group">
+	                                <label class="control-label">标题颜色: <span class="text-error">*</span></label>
+	                                <div class="controls">
+				                        <div class="input-prepend widget input-append color" data-color="rgb(255, 146, 180)" data-color-format="rgb" id="cp1">
+					                        <input type="text"  readonly name="titleColor" class="validate[required]"  value="${article.titleColor }">
+					                        <span class="add-on"><i style="background-color: rgb(255, 146, 180)"></i></span>
+				                        </div>
+                   				   </div>
+	                            </div>
+                   				 <!-- /color picker -->
+	                            
+	                             <div class="control-group">
+	                                <label class="control-label">标题级别: <span class="text-error">*</span></label>
+	                                 <div class="controls">
+                                            <select name="topLevel" class="styled" >
+                                                <option   value='0' ${article.topLevel eq 0?"selected":""}>0</option> 
+												<option   value='1' ${article.topLevel eq 1?"selected":""}>1</option> 
+												<option   value='2' ${article.topLevel eq 2?"selected":""}>2</option> <!-- 这里就表示这一项被默认选中,也就是页面一进来"非洲"这一项就是被选中的了 -->
+												<option   value='3' ${article.topLevel eq 3?"selected":""}>3</option> 
+												<option   value='4' ${article.topLevel eq 4?"selected":""}>4</option> 
+												<option   value='5' ${article.topLevel eq 5?"selected":""}>5</option> 
+											    <option   value='6' ${article.topLevel eq 6?"selected":""}>6</option> 
+                                            </select>
+                                     </div>
+	                            </div>
+	                            
+                           		<!-- WYSIWYG editor -->
+					            <div class="widget">
+					                <div class="navbar">
+					                	<div class="navbar-inner">
+					                		<h6>文章内容</h6>
+				                            <ul class="dropdown-menu pull-right">
+				                                <li><a href="#"><i class="icon-plus"></i>Add new option</a></li>
+				                                <li><a href="#"><i class="icon-reorder"></i>View statement</a></li>
+				                                <li><a href="#"><i class="icon-cogs"></i>Parameters</a></li>
+				                            </ul>
+				                		</div>
+				              	  </div>
+                				<textarea class="validate[required] span12" name="content" id="content">
+                					${article.content}
+                				</textarea>
+           				 	</div>
+	           				 <!-- /WYSIWYG editor -->
+	                            
+	                        
+	                            <div class="form-actions align-right">
+	                                <button type="submit" class="btn btn-info">提交</button>
+	                                <button type="reset" class="btn">重置</button>
+	                            </div>
+	                        </div>
+	                      </div>
+
+	                </fieldset>
+				</form>
+				<!-- /form validation -->
+				</div>
+				
+			
+<script type="text/javascript">
+	$(document).ready(function(){
+		 /*
+		 * 初始化Form,
+		 * @param: fomrId
+		 * @param: 提交成功之后跳转路径
+		 */
+		 initForm("articleForm","admin/article/list.jhtml");
+		 
+		 /*
+		 * 初始化颜色选择器
+		 */
+		 initColor();
+		 
+		//===== Form elements styling =====//
+		 $(".ui-datepicker-month, .styled, .dataTables_length select").uniform({ radioClass: 'choice' });
+		
+		 CKEDITOR.replace('content');
+	});
+	
+</script>
+    

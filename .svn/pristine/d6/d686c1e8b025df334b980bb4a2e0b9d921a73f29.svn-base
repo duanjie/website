@@ -1,0 +1,40 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:SinglepageServiceImpl.java
+ * Package Name:com.lsh.site.service.impl
+ * Date:2014年5月8日下午4:11:30
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.service.impl;
+
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import com.lsh.site.dao.SinglepageDao;
+import com.lsh.site.entity.Singlepage;
+import com.lsh.site.service.SinglepageService;
+
+/**
+ * ClassName: SinglepageServiceImpl <br/>
+ * Description: 类描述
+ * date: 2014年5月8日 下午4:11:30 <br/>
+ *
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Service("singlepageServiceImpl")
+public class SinglepageServiceImpl extends BaseServiceImpl<Singlepage, Long> implements SinglepageService{
+	
+	@Resource(name = "siteInfomationDaoImpl")
+	private SinglepageDao singlepageDao;
+	
+	@Resource(name = "siteInfomationDaoImpl")
+	public void setBaseDao(SinglepageDao siteInfomationDao) {
+		super.setBaseDao(siteInfomationDao);
+	}
+
+}

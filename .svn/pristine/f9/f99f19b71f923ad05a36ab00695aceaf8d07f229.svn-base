@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+	class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>绵阳联生活网络科技有限公司</title>
+<link rel="stylesheet" href="./public/css/language-selector.css"
+	type="text/css" media="all">
+<meta name="robots" content="index, follow">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" id="jetpack-subscriptions-css"
+	href="./public/css/subscriptions.css" type="text/css" media="all">
+<link rel="stylesheet"
+	id="advanced-responsive-video-embedder-plugin-styles-css"
+	href="./public/css/public.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack-widgets-css"
+	href="./public/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="zeropixel-style-css"
+	href="./public/css/style.css" type="text/css" media="all">
+<script src="./public/js/analytics.js"></script>
+<script type="text/javascript" src="./public/js/jquery.js"></script>
+<script type="text/javascript" src="./public/js/jquery-migrate.min.js"></script>
+<script type="text/javascript"
+	src="./public/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<meta name="generator" content="WordPress 3.8.3">
+<script type="text/javascript">
+	var icl_lang = 'pt-br';
+	var icl_home = 'http://我们的域.com/';
+</script>
+<script type="text/javascript" src="./public/js/sitepress.js"></script>
+<meta name="generator" content="WPML ver:2.7.1 stt:44,1;0">
+<style type="text/css">
+.arve-thumb-wrapper {
+	width: 300px;
+}
+
+.arve-normal-wrapper {
+	width: 1170px;
+}
+
+.arve-normal-wrapper.alignleft,.arve-normal-wrapper.alignright,.arve-normal-wrapper.aligncenter
+	{
+	width: 400px;
+}
+</style>
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" id="gravatar-card-css"
+	href="./public/css/hovercard.css">
+<link rel="stylesheet" type="text/css" id="gravatar-card-services-css"
+	href="./public/css/services.css">
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+		<p class="chromeframe">你使用的浏览器 <strong>过时的</strong>。 请 <a href="http://browsehappy.com/">更新您的浏览器</a> 或 <a href="http://www.google.com/chromeframe/?redirect=true">激活谷歌 Chrome Frame</a> 为了改善您的体验。</p>
+	<![endif]-->
+
+	<div class="margin-screen">
+		<div class="inner">
+			<div class="video-viewport">
+				<video preload="auto" autoplay="autoplay" loop="loop" muted="muted"
+					width="1920" height="1080">
+				</video>
+				<div class="image-home"></div>
+			</div>
+		</div>
+		<div class="menu-home">
+			<header class="fix-menu header-nav">
+				<div class="logo">
+					<a href="#我们公司的域名"> <img id="logo_136_40"
+						src="./index/image/logo_136_40.png" />
+					</a>
+				</div>
+
+				<nav class="nav-wrap">
+
+					<button class="navbar-toggle" type="button" data-toggle="collapse"
+						data-target=".bs-navbar-collapse">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+
+					<ul id="menu-principal" class="menu">
+						<li id="menu-item-24"
+							class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-24"><a
+							href="index.htm">首页</a></li>
+						<li id="menu-item-27"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a
+							href="projetos.htm">案例展示</a></li>
+						<li id="menu-item-28"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a
+							href="construction.htm">网站建设</a></li>
+						<li id="menu-item-25"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a
+							href="construction.htm">网站营销</a></li>
+						<li id="menu-item-29"
+							class="anchor menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a
+							href="about.htm">关于我们</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
+	</div>
+
+
+	<div class="home">
+
+		<div role="main" class="main">
+
+			<!-- <section class="title-page">
+				<h1>案例</h1>
+				<h4>我们最近完成的案例</h4>
+			</section> -->
+        <div style="height:15px;"></div> 
+			<div class="wrapper">
+				<div class="controls">
+					<ul>
+						<li class="filter active" data-filter="all">所有</li>
+						<li class="filter" data-filter="identidade-visual">综合服务</li>
+						<li class="filter" data-filter="ilustracao">生活家居</li>
+						<li class="filter" data-filter="print">工业品</li>
+						<li class="filter" data-filter="video">纺织品</li>
+						<li class="filter" data-filter="web">原材料</li>
+					</ul>
+				</div>
+				<ul id="Grid" class="lista-portfolio">
+					<li class="mix identidade-visual ilustracao web mix_all"
+						style="display: inline-block; opacity: 1;"><a
+						href="http://zeropixel.com.br/portfolio/comunicadores/"> <img
+							width="370" height="214"
+							src="./index/image/1.jpg"
+							class="attachment-medium wp-post-image boders"
+							alt="装修家装可视化版">
+							<div class="mask">
+								<span class="job-name">装修家装可视化版 </span>
+							</div>
+					</a></li>
+					<li class="mix identidade-visual print mix_all"
+						style="display: inline-block; opacity: 1;"><a
+						href="parque.htm"> <img width="370" height="214"
+							src="./index/image/2.jpg"
+							class="attachment-medium wp-post-image boders" alt="电子电气可视化版">
+							<div class="mask">
+								<span class="job-name">电子电气可视化版</span>
+							</div>
+					</a></li>
+					<li
+						class="mix identidade-visual ilustracao print video web mix_all"
+						style="display: inline-block; opacity: 1;"><a
+						href="http://zeropixel.com.br/portfolio/alagoas-social-media/">
+							<img width="370" height="214"
+							src="./index/image/3.jpg"
+							class="attachment-medium wp-post-image boders" alt="婚纱摄影可视化版">
+							<div class="mask">
+								<span class="job-name">婚纱摄影可视化版</span>
+							</div>
+					</a></li>
+					<li class="mix identidade-visual print mix_all "
+						style="display: inline-block; opacity: 1;"><a
+						href="http://zeropixel.com.br/portfolio/emcontexto-comunicacao/">
+							<img width="370" height="214"
+							src="./index/image/4.jpg"
+							class="attachment-medium wp-post-image boders" alt="IT科技可视化版">
+							<div class="mask">
+								<span class="job-name">IT科技可视化版</span>
+							</div>
+					</a></li>
+					<li class="mix web mix_all"
+						style="display: inline-block; opacity: 1;"><a
+						href="grupo.htm"> <img width="370" height="214"
+							src="./index/image/5.jpg"
+							class="attachment-medium wp-post-image boders" alt="建筑建材可视化版 jz559">
+							<div class="mask">
+								<span class="job-name">建筑建材可视化版</span>
+							</div>
+					</a></li>
+					<li class="mix web mix_all"
+						style="display: inline-block; opacity: 1;"><a
+						href="http://zeropixel.com.br/portfolio/kuka-estrategia/"> <img
+							width="370" height="214" src="./index/image/6.jpg"
+							class="attachment-medium wp-post-image boders" alt="婚纱摄影平板版  mpad_1">
+							<div class="mask">
+								<span class="job-name">婚纱摄影平板版</span>
+							</div>
+					</a></li>
+					<li class="mix web mix_all"
+						style="display: inline-block; opacity: 1;"><a
+						href="http://zeropixel.com.br/portfolio/loja-squalus/"> <img
+							width="370" height="214" src="./index/image/7.jpg"
+							class="attachment-medium wp-post-image boders" alt="IT科技可视化版（it638）">
+							<div class="mask">
+								<span class="job-name">IT科技可视化版</span>
+							</div>
+					</a></li>
+					<li class="mix identidade-visual print mix_all"
+						style="display: inline-block; opacity: 1;"><a
+						href="http://zeropixel.com.br/portfolio/hospital-cliom/"> <img
+							width="370" height="214" src="./index/image/8.jpg"
+							class="attachment-medium wp-post-image boders" alt="茶叶茶馆可视化版 cy558">
+							<div class="mask">
+								<span class="job-name">茶叶茶馆可视化版</span>
+							</div>
+					</a></li>
+					<li class="mix ilustracao video mix_all"
+						style="display: inline-block; opacity: 1;"><a
+						href="http://zeropixel.com.br/portfolio/unipe/"> <img
+							width="370" height="214" src="./index/image/9.jpg"
+							class="attachment-medium wp-post-image boders" alt="家装设计可视化版 sj635">
+							<div class="mask">
+								<span class="job-name">家装设计可视化版</span>
+							</div>
+					</a></li>
+					
+				
+					<li class="gap"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="top back-to-top">
+		<a href="#top" style="text-align: center;">顶部</a>
+	</div>
+	<div id="contact" class="foot">
+		<div>
+			<footer>
+				<section class="title-footer">
+					<h1>一个始终不变的承诺————设计经典</h1>
+				</section>
+
+				<section class="info-contact">
+					<div class="where">
+						<span class="title">地址：</span>
+
+						<address>
+							<p>
+								<a href="#" target="_blank"> <span class="address">四川省绵阳市花园崇尚三单元六楼五号</span>
+									<span class="locality">四川-绵阳</span>
+								</a>
+							</p>
+						</address>
+					</div>
+
+					<div class="how">
+						<span class="title">联系我们</span> <span class="email"> <a
+							href="#" target="_blank">171665414@qq.com</a>
+						</span> <span class="phone"> <a href="#" target="_blank">0816-2242700</a>
+							<a href="#" target="_blank">0816-2242700</a>
+						</span>
+					</div>
+
+					<div class="footer-social">
+						<div>
+							<span class="desc-social">网站建设</span>
+						</div>
+					</div>
+				</section>
+			</footer>
+		</div>
+	</div>
+	<div style="display: none"></div>
+	<script type="text/javascript" src="./public/js/devicepx-jetpack.js"></script>
+	<script type="text/javascript" src="./public/js/gprofiles.js"></script>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var WPGroHo = {
+			"my_hash" : ""
+		};
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="./public/js/wpgroho.js"></script>
+	<script type="text/javascript" src="./public/js/main.min.js"></script>
+	<script type="text/javascript">
+		st_go({
+			v : 'ext',
+			j : '1:2.9.3',
+			blog : '63854016',
+			post : '2',
+			tz : '-3'
+		});
+		var load_cmc = function() {
+			linktracker_init(63854016, 2, 2);
+		};
+		if (typeof addLoadEvent != 'undefined')
+			addLoadEvent(load_cmc);
+		else
+			load_cmc();
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		});
+		ga('create', 'UA-22513742-2', 'zeropixel.com.br');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

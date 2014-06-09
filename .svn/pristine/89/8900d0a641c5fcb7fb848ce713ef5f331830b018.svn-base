@@ -1,0 +1,68 @@
+/*
+ * Project Name:LSHWebSite
+ * File Name:Menu.java
+ * Package Name:com.lsh.site.entity
+ * Date:2014年4月25日上午9:50:14
+ * Copyright (c) 2014, MYLSH All Rights Reserved.
+ *
+ */
+package com.lsh.site.entity;
+
+import javax.persistence.*;
+
+import java.math.BigInteger;
+
+/**
+ * 
+ * ClassName: Menu <br/>
+ * Description: 菜单 Entity 
+ * date: 2014年5月5日 上午11:25:51 <br/>
+ * 
+ * @author DuanJie
+ * @version 1.0
+ * @since JDK 1.6
+ */
+@Entity
+@Table(name = "t_menu")
+@SequenceGenerator(name = "sequenceGenerator", sequenceName = "t_menu_sequence")
+public class Menu extends BaseEntity {
+
+	private static final long serialVersionUID = 1L;
+
+	private String name;
+
+	@Column(name = "parent_id")
+	private BigInteger parentId;
+
+	
+	private short type;       // 0：非底层菜单，1：文章
+
+	public Menu() {
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public BigInteger getParentId() {
+		return this.parentId;
+	}
+
+	public void setParentId(BigInteger parentId) {
+		this.parentId = parentId;
+	}
+
+	public short getType() {
+		return this.type;
+	}
+
+	public void setType(short type) {
+		this.type = type;
+	}
+
+
+}
